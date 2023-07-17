@@ -1,0 +1,28 @@
+// Variables
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$background-color: var(--background-color);
+
+// Mixin for theme styles
+@mixin applyThemeStyles {
+  background-color: $background-color;
+  color: $primary-color;
+}
+
+// Light theme styles
+.light {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+
+  @include applyThemeStyles;
+}
+
+// Dark theme styles
+.dark {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #212529;
+
+  @include applyThemeStyles;
+}

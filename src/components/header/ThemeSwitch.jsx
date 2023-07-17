@@ -2,15 +2,25 @@ import React, { useContext } from 'react';
 import ThemeContext from '../../context/ThemeContext';
 
 const ThemeSwitch = () => {
-  const { theme, setTheme } = useContext(ThemeContext);
+    // Consume the theme and setTheme function from the ThemeContext
+    const { theme, changeTheme } = useContext(ThemeContext);
 
-  return (
-    <div>
-        <button onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
-            Switch
-        </button>
-    </div>
-  );
+    const handleThemeChange = () => {
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+
+        // Update the theme using the changeTheme function
+        changeTheme(newTheme);
+        // Save the updated theme to localStorage
+        localStorage.setItem('theme', newTheme);
+    };
+
+    return (
+        <div>
+            <button onClick={handleThemeChange}>
+                Switch
+            </button>
+        </div>
+    );
 };
 
 export default ThemeSwitch;

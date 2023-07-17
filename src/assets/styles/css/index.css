@@ -1,3 +1,17 @@
+.light {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f8f9fa;
+  background-color: var(--background-color);
+  color: var(--primary-color); }
+
+.dark {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #212529;
+  background-color: var(--background-color);
+  color: var(--primary-color); }
+
 *, *:before, *:after {
   box-sizing: border-box; }
 
