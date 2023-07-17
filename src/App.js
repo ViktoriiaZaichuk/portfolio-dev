@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Route, Routes } from 'react-router-dom';
+
+import ThemeContext from './context/ThemeContext';
 
 import Home from './pages/home';
 import About from './pages/about';
@@ -8,8 +10,10 @@ import Projects from './pages/projects';
 import ErrorPage from './pages/error-page';
 
 const App = () => {
+  const { theme } = useContext(ThemeContext);
+
   return (
-    <div className="App">
+    <div className={`${theme}`}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
