@@ -1,0 +1,11 @@
+header {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 80px;
+    width: 100%;
+    background-color: $background-color;
+    border-bottom: 3px solid $border-color;
+    @include flex-space-between;
+}

@@ -11,9 +11,33 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
+    overflow-x: hidden;
 }
 
 html {
     height: 100vh; 
     font-size: 62.5%;
+    font-size: 1.6rem;;
+}
+
+body {
+
+}
+
+main {
+    min-height: 100vh; 
+}
+
+h1 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-shadow: $text-shadow 7px 7px;
+    font-family: $displayFont;
+    letter-spacing: 3px;
+    -webkit-text-stroke: .1px $text-stroke;
+    text-stroke: .1px $text-stroke;
+}
+
+ol, ul{
+    list-style: none;
 }

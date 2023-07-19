@@ -1,17 +1,30 @@
+/* Variables Colors */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .light {
-  --primary-color: #007bff;
+  --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
-  --background-color: #f8f9fa;
+  --background-color: #e6e6e6;
+  --dots-color: #1a1a1aef;
+  --border-color: #1a1a1a;
+  --text-shadow: #1a1a1a;
+  --text-stroke: #F9AC3C;
   background-color: var(--background-color);
   color: var(--primary-color); }
 
 .dark {
-  --primary-color: #007bff;
+  --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
-  --background-color: #212529;
+  --background-color: #1A1A1A;
+  --dots-color:  #e6e6e6ad;
+  --border-color:  #e6e6e6;
+  --text-shadow: #1A1A1A;
+  --text-stroke: #1A1A1A;
   background-color: var(--background-color);
   color: var(--primary-color); }
 
+/* Variables fonts */
+/* Flex box */
+/* Responsive */
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -23,8 +36,66 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: none; }
+  text-size-adjust: none;
+  overflow-x: hidden; }
 
 html {
   height: 100vh;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  font-size: 1.6rem; }
+
+main {
+  min-height: 100vh; }
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-shadow: var(--text-shadow) 7px 7px;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  -webkit-text-stroke: 0.1px var(--text-stroke);
+  text-stroke: 0.1px var(--text-stroke); }
+
+ol, ul {
+  list-style: none; }
+
+header {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: var(--background-color);
+  border-bottom: 3px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+/* Home page styles */
+.home {
+  /* Hero section */
+  /* Intro section */ }
+  .home--hero {
+    min-height: 100vh;
+    padding-top: 80px;
+    --dotSize: 0.1rem;
+    --bgSize: .5rem;
+    --bgPosition: calc(var(--bgSize) / 2);
+    background-image: radial-gradient(circle at center, var(--dots-color) var(--dotSize), transparent 0), radial-gradient(circle at center, var(--dots-color) var(--dotSize), transparent 0);
+    background-size: var(--bgSize) var(--bgSize);
+    background-position: 0 0, var(--bgPosition) var(--bgPosition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: var(--border-color) 3px solid; }
+    .home--hero__txt h1 {
+      padding-top: 3rem;
+      text-align: center; }
+    .home--hero__img {
+      border: var(--border-color) 3px solid;
+      border-bottom: none;
+      background-color: var(--background-color);
+      min-width: 300px;
+      min-height: 300px; }

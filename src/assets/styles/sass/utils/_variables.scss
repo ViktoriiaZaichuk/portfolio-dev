@@ -1,7 +1,12 @@
-// Variables
+/* Variables Colors */
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
 $background-color: var(--background-color);
+
+$dots-color: var(--dots-color);
+$border-color: var(--border-color);
+$text-shadow: var(--text-shadow);
+$text-stroke: var(--text-stroke);
 
 // Mixin for theme styles
 @mixin applyThemeStyles {
@@ -11,18 +16,39 @@ $background-color: var(--background-color);
 
 // Light theme styles
 .light {
-  --primary-color: #007bff;
+  --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
-  --background-color: #f8f9fa;
+  --background-color: #e6e6e6;
+
+  --dots-color: #1a1a1aef;
+
+  --border-color: #1a1a1a;
+
+  --text-shadow: #1a1a1a;
+  --text-stroke: #F9AC3C;
 
   @include applyThemeStyles;
 }
 
 // Dark theme styles
 .dark {
-  --primary-color: #007bff;
+  --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
-  --background-color: #212529;
+  --background-color: #1A1A1A;
+
+  --dots-color:  #e6e6e6ad;
+
+  --border-color:  #e6e6e6;
+
+  --text-shadow: #1A1A1A;
+  --text-stroke: #1A1A1A;
 
   @include applyThemeStyles;
 }
+
+/* Variables fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+$displayFont: 'Anton', sans-serif;
+$bodyTextFont: 'Calibri';
+

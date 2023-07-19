@@ -1,5 +1,11 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/keyframes";
+@import "./utils/ui";
 
 @import "./base/reset";
+
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./pages/homepage";

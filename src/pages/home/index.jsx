@@ -6,8 +6,20 @@ const Home = () => {
 
     return (
         <Layout>
-            <h1>{t('home.title')}</h1>
-            <p>{t('home.description')}</p>
+            <main className="home">
+                <section className="home--hero">
+                    <div className="home--hero__txt">
+                        <h1>{t('home.hero.title')}</h1>
+                    </div>
+                    <div className="home--hero__img">
+                        
+                    </div>
+                </section>
+                
+                <section className="home-intro">
+
+                </section>
+            </main>
         </Layout>
     )
 }

@@ -1,0 +1,30 @@
+/* Home page styles */
+.home {
+    /* Hero section */
+    &--hero {
+        min-height: 100vh;
+        padding-top: 80px;
+        @include halftone;
+        @include flex-column;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: $border-color 3px solid;
+        &__txt {
+            h1 {
+                padding-top: 3rem;
+                text-align: center;
+            }
+        }
+        &__img {
+            border: $border-color 3px solid;
+            border-bottom: none;
+            background-color: $background-color;
+            min-width: 300px;
+            min-height: 300px;
+        }
+    }
+    /* Intro section */
+    &--intro {
+
+    }
+}

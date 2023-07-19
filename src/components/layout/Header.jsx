@@ -4,11 +4,11 @@ import ThemeSwitch from '../header/ThemeSwitch';
 
 const Header = () => {
     return (
-        <div className=''>
-            <p>Header</p>
+        <header className=''>
+            <p>VZ</p>
             <ThemeSwitch />
             <LanguageSwitch />
-        </div>
+        </header>
     )
 }
 
