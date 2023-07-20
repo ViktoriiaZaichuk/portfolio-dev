@@ -1,4 +1,10 @@
 {
+    "navbar.about": "About",
+    "navbar.projects": "Projects",
+    "navbar.contact": "contact",
+    
     "home.hero.title": "Passionate Developer. Crafting Digital Experiences.",
     "home.hero.description": "Explore our products and services"
+
+
 }
