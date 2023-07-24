@@ -1,0 +1,15 @@
+/* FOOTER */
+.footer {
+    background-color: $primary-color;
+    padding: 2rem 2rem 0 2rem;
+    color: $black;
+    &--links {
+        @include flex-space-between;
+        margin-bottom: 1rem;
+    }
+    &--legal {
+        span {
+            font-size: .8rem;
+        }
+    }
+}

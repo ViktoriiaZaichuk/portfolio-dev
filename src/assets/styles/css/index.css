@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 .light {
   transition: all 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --black: #1A1A1A;
   --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
   --background-color: #e6e6e6;
@@ -16,6 +17,7 @@
 
 .dark {
   transition: all 1.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  --black: #1A1A1A;
   --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
   --background-color: #1A1A1A;
@@ -186,6 +188,19 @@ a {
       .header .lang-switch .custom-select:focus, .header .lang-switch .custom-select:hover {
         background-color: var(--primary-color) !important;
         background: var(--primary-color) !important; }
+
+/* FOOTER */
+.footer {
+  background-color: var(--primary-color);
+  padding: 2rem 2rem 0 2rem;
+  color: var(--black); }
+  .footer--links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem; }
+  .footer--legal span {
+    font-size: .8rem; }
 
 /* Home page styles */
 .home {
