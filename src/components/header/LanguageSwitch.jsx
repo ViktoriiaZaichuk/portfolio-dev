@@ -20,10 +20,10 @@ const LanguageSwitch = () => {
   };
 
   return (
-    <div>
-      <select onChange={handleLanguageChange} value={language}>
-        <option value="en">English</option>
-        <option value="fr">Français</option>
+    <div className='lang-switch'>
+      <select className='custom-select' onChange={handleLanguageChange} value={language}>
+        <option className='option' value="en">ENG</option>
+        <option className='option' value="fr">FR</option>
       </select>
     </div>
   );

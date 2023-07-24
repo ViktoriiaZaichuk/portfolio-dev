@@ -1,9 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Logo = () => {
     return (
         <div className='logo'>
-            <p>VZ</p>
+            <NavLink to="/">
+                <span>VZ</span>
+            </NavLink>
         </div>
     )
 }

@@ -3,10 +3,12 @@ $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
 $background-color: var(--background-color);
 
+$text-color: var(--text-color);
 $dots-color: var(--dots-color);
 $border-color: var(--border-color);
 $text-shadow: var(--text-shadow);
 $text-stroke: var(--text-stroke);
+$burger-btn-color: var(--burger-btn-color);
 
 // Mixin for theme styles
 @mixin applyThemeStyles {
@@ -16,9 +18,12 @@ $text-stroke: var(--text-stroke);
 
 // Light theme styles
 .light {
+  transition: all 1.2s cubic-bezier(.34,1.56,.64,1);
   --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
   --background-color: #e6e6e6;
+
+  --text-color: #1a1a1a;
 
   --dots-color: #1a1a1aef;
 
@@ -27,14 +32,19 @@ $text-stroke: var(--text-stroke);
   --text-shadow: #1a1a1a;
   --text-stroke: #F9AC3C;
 
+  --burger-btn-color: #1a1a1a;
+
   @include applyThemeStyles;
 }
 
 // Dark theme styles
 .dark {
+  transition: all 1.2s cubic-bezier(.34,1.56,.64,1);
   --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
   --background-color: #1A1A1A;
+
+  --text-color: #e6e6e6;
 
   --dots-color:  #e6e6e6ad;
 
@@ -42,6 +52,8 @@ $text-stroke: var(--text-stroke);
 
   --text-shadow: #1A1A1A;
   --text-stroke: #1A1A1A;
+
+  --burger-btn-color: #e6e6e6;
 
   @include applyThemeStyles;
 }

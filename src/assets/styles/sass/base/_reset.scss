@@ -6,12 +6,12 @@ html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockq
     margin: 0;
     padding: 0;
     border: 0;
-    /* font-family: $primaryFont; */
+    font-family: $bodyTextFont;
     vertical-align: baseline;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 html {
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-
+    position: relative;
 }
 
 main {
@@ -31,12 +31,24 @@ main {
 h1 {
     font-size: 3.2rem;
     font-weight: 700;
+    letter-spacing: 3px;
     text-shadow: $text-shadow 7px 7px;
     font-family: $displayFont;
-    letter-spacing: 3px;
-    -webkit-text-stroke: .1px $text-stroke;
 }
 
 ol, ul{
     list-style: none;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background: transparent;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }

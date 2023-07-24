@@ -1,6 +1,9 @@
 import React, { useContext } from 'react';
 import ThemeContext from '../../context/ThemeContext';
 
+import { ReactComponent as LightTheme } from '../../assets/img/icons/light.svg';
+import { ReactComponent as DarkTheme } from '../../assets/img/icons/dark.svg';
+
 const ThemeSwitch = () => {
     // Consume the theme and setTheme function from the ThemeContext
     const { theme, changeTheme } = useContext(ThemeContext);
@@ -14,10 +17,12 @@ const ThemeSwitch = () => {
         localStorage.setItem('theme', newTheme);
     };
 
+    const buttonImage = theme === 'light' ? <DarkTheme /> : <LightTheme />;
+
     return (
-        <div>
+        <div className='theme-switch'>
             <button onClick={handleThemeChange}>
-                Switch
+                {buttonImage}
             </button>
         </div>
     );
