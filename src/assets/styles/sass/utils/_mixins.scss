@@ -16,6 +16,7 @@
     justify-content: space-between;
 }
 
+
 /* Responsive */
 $screen1550: 1550px;
 $screen1300: 1300px;
@@ -52,4 +53,14 @@ $screen550: 550px;
     @media (max-width: #{$screen550}) {
       @content;
     }
+}
+
+
+/* Button */
+@mixin button {
+  padding: .3rem 2rem;
+  cursor: pointer;
+  font-family: $displayFont;
+  letter-spacing: 1px;
+  font-size: .9rem;
 }

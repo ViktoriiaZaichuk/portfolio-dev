@@ -1,0 +1,7 @@
+/* MAIN BUTTON */
+.main-button {
+    @include button;
+    background-color: $primary-color;
+    border: $black 2px solid;
+    box-shadow: $black 4px 3px 0px 0px;
+}

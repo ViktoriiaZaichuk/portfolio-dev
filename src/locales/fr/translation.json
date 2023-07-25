@@ -2,6 +2,10 @@
     "navbar.about": "À propos",
     "navbar.projects": "Projects",
     "navbar.contact": "Contact",
+
+    "footer.position": "Développeuse Web",
+    "footer.contactintro": "Je ne suis qu'à un email de distance ! Écrivez-moi pour discuter davantage.",
+    "footer.button": "Contact me",
     
     "home.hero.title": "Bienvenue sur mon site web",
     "home.hero.description": "Découvrez nos produits et services"

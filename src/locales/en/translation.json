@@ -2,9 +2,13 @@
     "navbar.about": "About",
     "navbar.projects": "Projects",
     "navbar.contact": "Contact",
+
+    "footer.position": "Web developer",
+    "footer.contactintro": "I'm just an email away! Drop me a line to discuss more.",
+    "footer.button": "Contact me",
     
     "home.hero.title": "Passionate Developer. Crafting Digital Experiences.",
     "home.hero.description": "Explore our products and services"
 
-
+ 
 }
