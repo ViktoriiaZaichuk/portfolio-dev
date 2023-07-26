@@ -2,6 +2,7 @@
 .home {
     /* Hero section */
     &--hero {
+        @include layout;
         min-height: 100vh;
         padding-top: 80px;
         @include halftone;
@@ -25,6 +26,6 @@
     }
     /* Intro section */
     &--intro {
-
+        @include layout;
     }
 }

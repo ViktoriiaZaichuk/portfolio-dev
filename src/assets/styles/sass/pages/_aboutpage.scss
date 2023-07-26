@@ -1,0 +1,35 @@
+/* About page styles */
+.about {
+    /* Hero section */
+    &--hero {
+        min-height: 100vh;
+        padding-top: 80px;
+    }
+    /* Intro section */
+    &--intro {
+        @include layout;
+        @include halftone;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: $border-color 3px solid;
+        border-top: $border-color 3px solid;
+        & h2 {
+            
+        }
+    }
+    /* Info section */
+    &--info {
+        @include flex-center;
+        &__img {
+            flex: 1 1 0px;
+        }
+        &__txt {
+            flex: 1 1 0px;
+        }
+
+    }
+    /* Skills section */
+    &--skills {
+
+    }
+}

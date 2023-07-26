@@ -33,6 +33,7 @@
 
 /* Variables fonts */
 /* Flex box */
+/* Layout */
 /* Responsive */
 /* Button */
 *, *:before, *:after {
@@ -251,6 +252,7 @@ a {
   /* Hero section */
   /* Intro section */ }
   .home--hero {
+    padding: 0 2rem;
     min-height: 100vh;
     padding-top: 80px;
     --dotSize: 0.1rem;
@@ -273,3 +275,35 @@ a {
       background-color: var(--background-color);
       min-width: 300px;
       min-height: 300px; }
+  .home--intro {
+    padding: 0 2rem; }
+
+/* About page styles */
+.about {
+  /* Hero section */
+  /* Intro section */
+  /* Info section */
+  /* Skills section */ }
+  .about--hero {
+    min-height: 100vh;
+    padding-top: 80px; }
+  .about--intro {
+    padding: 0 2rem;
+    --dotSize: 0.1rem;
+    --bgSize: .5rem;
+    --bgPosition: calc(var(--bgSize) / 2);
+    background-image: radial-gradient(circle at center, var(--dots-color) var(--dotSize), transparent 0), radial-gradient(circle at center, var(--dots-color) var(--dotSize), transparent 0);
+    background-size: var(--bgSize) var(--bgSize);
+    background-position: 0 0, var(--bgPosition) var(--bgPosition);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: var(--border-color) 3px solid;
+    border-top: var(--border-color) 3px solid; }
+  .about--info {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .about--info__img {
+      flex: 1 1 0px; }
+    .about--info__txt {
+      flex: 1 1 0px; }

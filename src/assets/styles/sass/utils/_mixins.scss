@@ -17,6 +17,11 @@
 }
 
 
+/* Layout */
+@mixin layout {
+  padding: 0 2rem;
+}
+
 /* Responsive */
 $screen1550: 1550px;
 $screen1300: 1300px;
