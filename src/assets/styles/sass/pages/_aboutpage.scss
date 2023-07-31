@@ -14,22 +14,27 @@
         border-bottom: $border-color 3px solid;
         border-top: $border-color 3px solid;
         & h2 {
-            
+            background-color: $background-color;
         }
     }
     /* Info section */
     &--info {
         @include flex-center;
+        background-color: $primary-color;
+        border-bottom: $border-color 3px solid;
         &__img {
             flex: 1 1 0px;
         }
         &__txt {
             flex: 1 1 0px;
+            padding: 2rem;
+            color: $text-color;
         }
 
     }
     /* Skills section */
     &--skills {
-
+        @include layout;
+        
     }
 }

@@ -1,4 +1,5 @@
 {
+    "navbar.home": "Home",
     "navbar.about": "À propos",
     "navbar.projects": "Projects",
     "navbar.contact": "Contact",
@@ -13,6 +14,7 @@
     "about.hero.title": "Expérience, Créativité, et Performance.",
     "about.intro.title": "Une développeuse curieuse et motivée, avec une expérience dans le développement web et le design. J'apporte une approche créative à chaque projet tout en restant concentré sur les résultats concrets.",
     "about.info.txt01": "Mon parcours professionnel a débuté dans le domaine des Ressources Humaines, où j'ai acquis des compétences en gestion d'équipe et en communication. Cependant, ma passion pour la création et l'innovation m'a poussé à entreprendre une reconversion dans le domaine du Web Design et du Développement. Aujourd'hui, je suis une développeuse Full Stack et Designer UX/UI, désireuse de contribuer à des projets passionnants et ambitieux.",
-    "about.info.txt02": "J'ai une approche collaborative et je suis convaincu que la communication transparente est essentielle pour la réussite d'un projet. Je suis toujours ouvert aux nouvelles idées et aux défis qui stimulent ma créativité."
-
+    "about.info.txt02": "J'ai une approche collaborative et je suis convaincu que la communication transparente est essentielle pour la réussite d'un projet. Je suis toujours ouvert aux nouvelles idées et aux défis qui stimulent ma créativité.",
+    "about.skills.title": "Bien accrochez-vous ! Mes compétences font des étincelles tant en développement Front-end qu'en Back-end ! ",
+    "about.skills.cv": "Pour en savoir plus sur mon parcours professionnel et mes qualifications, vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :"
 }

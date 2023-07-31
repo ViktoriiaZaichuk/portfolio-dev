@@ -9,6 +9,11 @@ const NavBarMenu = ({ isMenuOpen }) => {
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
       <ul className="menu-items">
         <li>
+          <NavLink to="/">
+            {t('navbar.home')}
+          </NavLink>
+        </li>
+        <li>
           <NavLink to="/about">
             {t('navbar.about')}
           </NavLink>

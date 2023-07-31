@@ -299,11 +299,19 @@ a {
     padding-bottom: 2rem;
     border-bottom: var(--border-color) 3px solid;
     border-top: var(--border-color) 3px solid; }
+    .about--intro h2 {
+      background-color: var(--background-color); }
   .about--info {
     display: flex;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    background-color: var(--primary-color);
+    border-bottom: var(--border-color) 3px solid; }
     .about--info__img {
       flex: 1 1 0px; }
     .about--info__txt {
-      flex: 1 1 0px; }
+      flex: 1 1 0px;
+      padding: 2rem;
+      color: var(--text-color); }
+  .about--skills {
+    padding: 0 2rem; }

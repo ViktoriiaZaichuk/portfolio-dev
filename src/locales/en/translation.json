@@ -1,4 +1,5 @@
 {
+    "navbar.home": "Home",
     "navbar.about": "About",
     "navbar.projects": "Projects",
     "navbar.contact": "Contact",
@@ -10,10 +11,12 @@
     "home.hero.title": "Passionate Developer. Crafting Digital Experiences.",
     "home.hero.description": "Explore our products and services",
 
-    "about.hero.title": "Expérience, Créativité, et Performance.",
-    "about.intro.title": "Une développeuse curieuse et motivée, avec une expérience dans le développement web et le design. J'apporte une approche créative à chaque projet tout en restant concentré sur les résultats concrets.",
-    "about.info.txt01": "Mon parcours professionnel a débuté dans le domaine des Ressources Humaines, où j'ai acquis des compétences en gestion d'équipe et en communication. Cependant, ma passion pour la création et l'innovation m'a poussé à entreprendre une reconversion dans le domaine du Web Design et du Développement. Aujourd'hui, je suis une développeuse Full Stack et Designer UX/UI, désireuse de contribuer à des projets passionnants et ambitieux.",
-    "about.info.txt02": "J'ai une approche collaborative et je suis convaincu que la communication transparente est essentielle pour la réussite d'un projet. Je suis toujours ouvert aux nouvelles idées et aux défis qui stimulent ma créativité."
+    "about.hero.title": "Experience, Creativity, and Performance.",
+    "about.intro.title": "A curious and motivated developer with experience in web development and design. I bring a creative approach to every project while staying focused on concrete results.",
+    "about.info.txt01": "My professional journey began in the field of Human Resources, where I acquired skills in team management and communication. However, my passion for creation and innovation led me to undergo a career transition into Web Design and Development. Today, I am a Full Stack developer and UX/UI Designer, eager to contribute to exciting and ambitious projects.",
+    "about.info.txt02": "I have a collaborative approach and believe that transparent communication is essential for the success of a project. I am always open to new ideas and challenges that stimulate my creativity.",
+    "about.skills.title": "Buckle up! My skills pack a punch in both Front-end and Back-end development!",
+    "about.skills.cv": "To learn more about my professional journey and qualifications, you can download my CV by clicking the link below:"
 
 
 }
