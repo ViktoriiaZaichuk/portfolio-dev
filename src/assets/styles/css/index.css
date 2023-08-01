@@ -36,6 +36,7 @@
 /* Layout */
 /* Responsive */
 /* Button */
+/* Project card */
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -247,6 +248,7 @@ a {
   border: var(--black) 2px solid;
   box-shadow: var(--black) 4px 3px 0px 0px; }
 
+/* Projects card */
 /* Home page styles */
 .home {
   /* Hero section */
@@ -315,3 +317,10 @@ a {
       color: var(--text-color); }
   .about--skills {
     padding: 0 2rem; }
+
+/* Projects page */
+.projects--hero {
+  min-height: 100vh;
+  padding-top: 80px; }
+
+/* Project page */
