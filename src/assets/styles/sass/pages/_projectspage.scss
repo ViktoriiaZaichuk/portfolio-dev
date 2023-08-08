@@ -5,6 +5,7 @@
         padding-top: 80px;
     }
     &--list {
-        
+        @include flex-center;
+        gap: 1rem;
     }
 }

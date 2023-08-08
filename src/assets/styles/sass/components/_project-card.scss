@@ -1,1 +1,23 @@
 /* Projects card */
+.project-card-link {
+    @include card;
+    .project-card {
+        border: 1px solid $border-color;
+        border-radius: 10px;
+        &--img {
+            overflow: hidden;
+            border-bottom: 1px solid $border-color;
+            width: 100%;
+            height: 260px;
+            align-self: center;
+            & img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &--txt {
+            padding: .5rem;
+        }
+    }
+}

@@ -22,7 +22,7 @@ const Projects = () => {
                 <section className="projects--hero">
                     <h1>Projects</h1>
                 </section>
-                <section className="prokects--list">
+                <section className="projects--list">
                     {Object.values(projects).map((project) => (
                         <ProjectCard
                         key={project.id}
