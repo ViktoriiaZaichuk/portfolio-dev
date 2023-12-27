@@ -21,13 +21,27 @@
     "projects": {
         "1": {
             "id": "1",
-            "title": "Project 1",
-            "description": "Description of Project 1 in English"
+            "title": "Geosint",
+            "description": "Description of Project 1 in English",
+            "tags": "#react #nodejs #expressjs #sass #bootstrap",
+            "github": "",
+            "longDescription": "Description of Project 2 in English"
         },
         "2": {
             "id": "2",
             "title": "Project 2",
-            "description": "Description of Project 2 in English"
+            "description": "Description of Project 2 in English",
+            "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
+            "github": "",
+            "longDescription": "Description of Project 2 in English"
+        },
+        "3": {
+            "id": "3",
+            "title": "Portfolio Dev",
+            "description": "Description of Project 2 in English",
+            "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
+            "github": "https://github.com/ViktoriiaZaichuk/portfolio-dev",
+            "longDescription": "Description of Project 2 in English"
         }
     }
 }

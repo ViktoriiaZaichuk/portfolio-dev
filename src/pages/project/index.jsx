@@ -11,13 +11,22 @@ const Project = () => {
 
     const projectTitle = t(`projects.${id}.title`);
     const projectDescription = t(`projects.${id}.description`);
+    const projectTags = t(`projects.${id}.tags`);
+    const projectLongDescription = t(`projects.${id}.longDescription`);
 
     return (
         <Layout>
             <main className="project">
-            <h2>{projectTitle}</h2>
-            <p>{projectDescription}</p>
-            
+                <div className="project--hero">
+                    <h2>{projectTitle}</h2>
+                </div>
+                <div className="project--intro">
+                    <p>{projectDescription}</p>
+                    <p>{projectTags}</p>
+                </div>
+                <div className="project--description">
+                    <p>{projectLongDescription}</p>
+                </div>
             </main>
         </Layout>
     )

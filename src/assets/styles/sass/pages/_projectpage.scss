@@ -1,4 +1,14 @@
 /* Project page */
 .project {
-    
+    &--hero {
+        @include layout;
+        padding-top: 80px;
+        min-height: 80vh;
+    }
+    &--intro {
+        @include layout;
+    }
+    &--description {
+        @include layout;
+    }
 }

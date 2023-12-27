@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 const Logo = () => {
     return (
         <div className='logo'>
-            <NavLink to="/">
+            <NavLink to="/portfolio-dev">
                 <span>VZ</span>
             </NavLink>
         </div>

@@ -18,6 +18,10 @@
         }
         &--txt {
             padding: .5rem;
+            h3 {
+                text-transform: uppercase;
+                color: $text-color;
+            }
         }
     }
 }

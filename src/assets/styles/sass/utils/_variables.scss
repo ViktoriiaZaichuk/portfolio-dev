@@ -1,5 +1,8 @@
 /* Variables Colors */
 $black: var(--black);
+$red: var(--red);
+$blue: var(--blue);
+$green: var(--green);
 
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
@@ -22,6 +25,9 @@ $burger-btn-color: var(--burger-btn-color);
 .light {
   transition: all 1.2s cubic-bezier(.34,1.56,.64,1);
   --black: #1A1A1A;
+  --red: #F65D5D;
+  --blue: #5D75F6;
+  --green: #89E352;
 
   --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
@@ -45,6 +51,9 @@ $burger-btn-color: var(--burger-btn-color);
 .dark {
   transition: all 1.2s cubic-bezier(.34,1.56,.64,1);
   --black: #1A1A1A;
+  --red: #F65D5D;
+  --blue: #5D75F6;
+  --green: #89E352;
 
   --primary-color: #F9AC3C;
   --secondary-color: #6c757d;

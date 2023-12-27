@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProjectCard = ({ title, description, projectId }) => {
+const ProjectCard = ({ title, description, tags, projectId }) => {
     return (
         <Link to={`/project/${projectId}`} className="project-card-link">
             <div className="project-card">
@@ -10,7 +10,7 @@ const ProjectCard = ({ title, description, projectId }) => {
                 </div>
                 <div className='project-card--txt'>
                     <h3>{title}</h3>
-                    <p>{description}</p>
+                    <p>{tags}</p>
                 </div>
             </div>
         </Link>
