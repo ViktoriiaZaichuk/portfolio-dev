@@ -73,7 +73,7 @@ $screen550: 550px;
 /* Project card */
 @mixin card {
   display: block;
-  background-color: $red;
+  background-color: $background-color;
   padding: .7rem;
   border: 1px solid $border-color;
   border-radius: 10px;

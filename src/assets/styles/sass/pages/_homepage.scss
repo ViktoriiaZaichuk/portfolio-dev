@@ -5,7 +5,6 @@
         @include layout;
         min-height: 100vh;
         padding-top: 80px;
-        @include halftone;
         @include flex-column;
         align-items: center;
         justify-content: space-between;
@@ -14,6 +13,8 @@
             h1 {
                 padding-top: 3rem;
                 text-align: center;
+                text-transform: uppercase;
+                color: $text-color;
             }
         }
         &__img {

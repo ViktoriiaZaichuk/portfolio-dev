@@ -1,6 +1,6 @@
 /* FOOTER */
 .footer {
-    background-color: $primary-color;
+    background-color: $green;
     padding: 2rem 2rem 0 2rem;
     color: $black;
     border-top: $border-color 3px solid;
@@ -13,17 +13,19 @@
             span {
                 a {
                     font-family: $displayFont;
-                    font-size: 2rem;
+                    font-size: 1.8rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
                 }
             }
             p {
                 margin: .5rem 0 1rem 0;
+                font-style: italic;
             }
             div {
                 a {
-                    font-weight: 900;
+                    font-weight: 600;
                     margin-right: 1rem;
-                    font-style: italic;
                 }
             }
         }
@@ -44,7 +46,6 @@
             .social-links {
                 a {
                     margin: 0 1.5rem 0 0;
-                    font-weight: 600;
                 }
             }
         }
@@ -52,7 +53,7 @@
     &--legal {
         span {
             font-size: .6rem;
-            font-weight: 600;
+            font-weight: 400;
         }
     }
 }

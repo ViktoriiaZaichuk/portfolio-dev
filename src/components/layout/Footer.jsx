@@ -20,7 +20,7 @@ const Footer = () => {
         <footer className='footer'>
             <div className='footer--links'>
                 <div className='footer--links__nav'>
-                    <span className=''><NavLink to="/">Viktoriia Zaichuk</NavLink></span>
+                    <span className=''><NavLink to="/portfolio-dev">Viktoriia Zaichuk</NavLink></span>
                     <p>{t('footer.position')}</p>
                     <div>
                         <NavLink to="/about">

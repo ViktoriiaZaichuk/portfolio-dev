@@ -3,6 +3,8 @@ $black: var(--black);
 $red: var(--red);
 $blue: var(--blue);
 $green: var(--green);
+$white: var(--white);
+$purple: var(--purple);
 
 $primary-color: var(--primary-color);
 $secondary-color: var(--secondary-color);
@@ -18,31 +20,32 @@ $burger-btn-color: var(--burger-btn-color);
 // Mixin for theme styles
 @mixin applyThemeStyles {
   background-color: $background-color;
-  color: $primary-color;
+  color: $text-color;
 }
 
 // Light theme styles
 .light {
   transition: all 1.2s cubic-bezier(.34,1.56,.64,1);
-  --black: #1A1A1A;
+  --black: #1D1D1D;
   --red: #F65D5D;
-  --blue: #5D75F6;
-  --green: #89E352;
+  --purple: #B98CF1;
+  --green: #7F8263;
+  --white: #EFEFEF;
 
   --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
-  --background-color: #e6e6e6;
+  --background-color: #EFEFEF;
 
-  --text-color: #1a1a1a;
+  --text-color: #1D1D1D;
 
-  --dots-color: #1a1a1aef;
+  --dots-color: #1D1D1D;
 
-  --border-color: #1a1a1a;
+  --border-color: #1D1D1D;
 
-  --text-shadow: #1a1a1a;
+  --text-shadow: #1D1D1D;
   --text-stroke: #F9AC3C;
 
-  --burger-btn-color: #1a1a1a;
+  --burger-btn-color: #1D1D1D;
 
   @include applyThemeStyles;
 }
@@ -50,33 +53,33 @@ $burger-btn-color: var(--burger-btn-color);
 // Dark theme styles
 .dark {
   transition: all 1.2s cubic-bezier(.34,1.56,.64,1);
-  --black: #1A1A1A;
+  --black: #1D1D1D;
   --red: #F65D5D;
-  --blue: #5D75F6;
-  --green: #89E352;
+  --purple: #B98CF1;
+  --green: #7F8263;
+  --white: #EFEFEF;
 
   --primary-color: #F9AC3C;
   --secondary-color: #6c757d;
-  --background-color: #1A1A1A;
+  --background-color: #1D1D1D;
 
-  --text-color: #e6e6e6;
+  --text-color: #EFEFEF;
 
-  --dots-color:  #e6e6e6ad;
+  --dots-color:  #EFEFEF;
 
-  --border-color:  #e6e6e6;
+  --border-color:  #EFEFEF;
 
-  --text-shadow: #1A1A1A;
-  --text-stroke: #1A1A1A;
+  --text-shadow: #1D1D1D;
+  --text-stroke: #1D1D1D;
 
-  --burger-btn-color: #e6e6e6;
+  --burger-btn-color: #EFEFEF;
 
   @include applyThemeStyles;
 }
 
 /* Variables fonts */
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-$displayFont: 'Anton', sans-serif;
-$bodyTextFont: 'Noto Sans', sans-serif;
+$displayFont: 'Lato', sans-serif;
+$bodyTextFont: 'Lato', sans-serif;
 
