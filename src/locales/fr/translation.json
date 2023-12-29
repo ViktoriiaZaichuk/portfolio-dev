@@ -21,10 +21,14 @@
     "about.skills.cv": "Pour en savoir plus sur mon parcours professionnel et mes qualifications, vous pouvez télécharger mon CV en cliquant sur le lien ci-dessous :",
     "about.skills.btn": "Télécharger",
 
+    "projects.hero.title": "Projets Sélectionnés",
+    "projects.hero.description": "Plongez dans une présentation de mes projets. Chaque initiative est une démonstration de ma passion pour l'innovation et mon dévouement à fournir des solutions numériques. Explorez la diversité des projets ci-dessous pour avoir un aperçu de mes compétences et de ma créativité en action.",
+
     "projects": {
         "1": {
             "id": "1",
             "title": "Geosint",
+            "img": "projects-hero.webp",
             "description": "Description of Project 1 in french",
             "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
             "github": "",
@@ -33,6 +37,7 @@
         "2": {
             "id": "2",
             "title": "Project 2",
+            "img": "projects-hero.webp",
             "description": "Description of Project 2 in french",
             "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
             "github": "",
@@ -41,6 +46,7 @@
         "3": {
             "id": "3",
             "title": "Portfolio Dev",
+            "img": "projects-hero.webp",
             "description": "Description of Project 2 in English",
             "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
             "github": "https://github.com/ViktoriiaZaichuk/portfolio-dev",

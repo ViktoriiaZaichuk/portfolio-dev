@@ -1,8 +1,8 @@
 import React from "react";
 import { useTranslation } from 'react-i18next';
 
-import infoImg from "../../assets/img/pages/about-info.webp";
 import heroImg from "../../assets/img/pages/about-hero.webp";
+import infoImg from "../../assets/img/pages/about-info.webp";
 
 import Layout from "../../components/layout/Layout";
 import Button from "../../components/ui/Button";
