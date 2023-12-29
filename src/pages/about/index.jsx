@@ -42,23 +42,48 @@ const About = () => {
                 </section>
 
                 <section className="about--skills">
-                    <div>
+                    <div className="about--skills__txt">
                         <h2>{t('about.skills.title')}</h2>
+                        <p>{t('about.skills.description')}</p>
                     </div>
                     <div className="about--skills__list">
-                        <span>#JavaScript</span>
-                        <span>#React</span>
-                        <span>#HTML</span>
-                        <span>#CSS</span>
-                        <span>#Sass</span>
-                        <span>#Wordpress</span>
-                        <span>#Wix</span>
-                        <span>#Php</span>
-                        <span>#Laravel</span>
-                        <span>#Python</span>
-                        <span>#Django</span>
-                        <span>#Node.js</span>
-                        <span>#SQL</span>
+                        <div className="skills-card">
+                            <h3>Front-end</h3>
+                            <span>#JavaScript</span>
+                            <span>#React</span>
+                            <span>#HTML</span>
+                            <span>#CSS</span>
+                            <span>#Sass</span>
+                            <span>#Bootstrap</span>
+                            <span>#Wordpress</span>
+                            <span>#Wix</span>
+                        </div>
+                        <div className="skills-card">
+                            <h3>Back-end</h3>
+                            <span>#Php</span>
+                            <span>#Laravel</span>
+                            <span>#Python</span>
+                            <span>#Django</span>
+                            <span>#Node.js</span>
+                            <span>#SQL</span>
+                        </div>
+                        <div className="skills-card">
+                            <h3>Design</h3>
+                            <span>#UX</span>
+                            <span>#UI</span>
+                            <span>#Photoshop</span>
+                            <span>#Illustrator</span>
+                            <span>#Figma</span>
+                            <span>#Adobe XD</span>
+                        </div>
+                        <div className="skills-card">
+                            <h3>Other</h3>
+                            <span>#Git</span>
+                            <span>#GitHub</span>
+                            <span>#VS Code</span>
+                            <span>#Jira</span>
+                            <span>#Trello</span>
+                        </div>
                     </div>
                     <div className="about--skills__cv">
                         <p>{t('about.skills.cv')}</p>

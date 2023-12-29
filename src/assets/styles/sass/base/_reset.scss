@@ -30,8 +30,15 @@ main {
 
 h1 {
     font-size: 3.2rem;
-    font-weight: 700;
     font-family: $displayFont;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h2, h3, h4 {
+    font-family: $displayFont;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 ol, ul{
