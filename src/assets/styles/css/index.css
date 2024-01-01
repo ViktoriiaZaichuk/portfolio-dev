@@ -298,6 +298,11 @@ a {
       .project-card-link .project-card--txt h3 {
         text-transform: uppercase;
         color: var(--text-color); }
+      .project-card-link .project-card--txt p {
+        margin-top: .2rem;
+        font-size: .8rem;
+        font-weight: 300;
+        color: var(--text-color); }
 
 /* Home page styles */
 .home {
@@ -474,3 +479,56 @@ a {
 
 .project--description {
   padding: 0 2rem; }
+
+/* Contact page */
+.contact--hero {
+  padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  flex: 1 1 0px; }
+  .contact--hero h1 {
+    border-right: var(--border-color) 3px solid;
+    padding-right: 5rem; }
+  .contact--hero__txt {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+    .contact--hero__txt > div {
+      display: flex;
+      flex: 1 1 0px; }
+      .contact--hero__txt > div > div {
+        flex: 1 1 0px;
+        padding: 2rem;
+        justify-content: center;
+        display: flex;
+        flex-direction: column; }
+      .contact--hero__txt > div > div:first-child {
+        border-right: var(--border-color) 3px solid; }
+    .contact--hero__txt > :first-child {
+      border-bottom: var(--border-color) 3px solid; }
+    .contact--hero__txt span {
+      text-transform: uppercase;
+      font-weight: 300;
+      color: var(--purple); }
+    .contact--hero__txt .contact-location h3 {
+      margin-top: .5rem; }
+    .contact--hero__txt .contact-btn button {
+      margin-top: .5rem;
+      max-width: 300px; }
+    .contact--hero__txt .contact-social > div {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, auto);
+      margin-top: .5rem; }
+      .contact--hero__txt .contact-social > div a {
+        display: inline-block;
+        padding: 1rem 1rem 0 0; }
+    .contact--hero__txt .contact-img {
+      width: 100%; }
+      .contact--hero__txt .contact-img img {
+        border: var(--border-color) 3px solid;
+        display: block;
+        max-height: 600px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
