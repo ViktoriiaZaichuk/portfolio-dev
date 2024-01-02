@@ -1,0 +1,21 @@
+/* 404 page */
+.error-page {
+    @include flex-center;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 1rem;
+        span {
+            display: inline-block;
+            margin-left: .5rem;
+            text-transform: uppercase;
+        }
+        svg {
+            display: inline-block;
+            path {
+                fill: $text-color;
+            }
+        }
+    }
+}
