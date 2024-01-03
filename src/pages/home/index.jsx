@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Layout from "../../components/layout/Layout";
@@ -7,7 +7,15 @@ import homeIntro from "../../assets/img/pages/home-intro.webp";
 import ProjectCard from "../../components/ui/ProjectCard";
 import { Link } from "react-router-dom";
 
-const Home = () => {  
+const Home = () => {
+    // Update the document title
+    useEffect(() => {
+        document.title = 'Portfolio - Viktoriia Zaichuk';
+        return () => {
+            document.title = 'Portfolio - Viktoriia Zaichuk';
+        };
+    }, []);
+    
     const selectedLanguage = localStorage.getItem('language');
     const { t } = useTranslation();
 

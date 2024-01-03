@@ -1,14 +1,30 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import heroImg from "../../assets/img/pages/about-hero.webp";
 import infoImg from "../../assets/img/pages/about-info.webp";
+import pdfCv from "../../assets/files/Viktoriia_Zaichuk_CV.pdf";
 
 import Layout from "../../components/layout/Layout";
 import Button from "../../components/ui/Button";
 
 const About = () => {
+    // Update the document title
+    useEffect(() => {
+        document.title = 'Web Developer - Viktoriia Zaichuk';
+    }, []);
+
     const { t } = useTranslation();
+
+    // Download CV
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = pdfCv;
+        link.download = 'Viktoriia Zaichuk CV.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
 
     return (
         <Layout>
@@ -89,7 +105,7 @@ const About = () => {
                         <p>{t('about.skills.cv')}</p>
                         <Button
                             text={t('about.skills.btn')}
-                            /* onClick={handleClick} */
+                            onClick={handleDownload}
                             className="main-button" 
                         />
                     </div>

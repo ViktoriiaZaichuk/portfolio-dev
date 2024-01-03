@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import heroImg from "../../assets/img/pages/projects-hero.webp";
@@ -7,6 +7,11 @@ import Layout from "../../components/layout/Layout";
 import ProjectCard from "../../components/ui/ProjectCard";
 
 const Projects = () => {
+    // Update the document title
+    useEffect(() => {
+        document.title = 'Projects - Viktoriia Zaichuk';
+    }, []);
+
     const selectedLanguage = localStorage.getItem('language');
     const { t } = useTranslation();
 

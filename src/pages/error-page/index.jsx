@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 import Layout from "../../components/layout/Layout";
 
 const ErrorPage = () => {
+    // Update the document title
+    useEffect(() => {
+        document.title = '404 - Page not found';
+    }, []);
+
     return (
         <Layout>
             <main className="error-page">

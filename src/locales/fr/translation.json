@@ -33,20 +33,13 @@
             "title": "Geosint",
             "img": "projects-hero.webp",
             "description": "Description of Project 1 in french",
-            "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
-            "github": "",
+            "tags": "#react #nodejs #postgresql #expressjs #apirest #sass #bootstrap",
+            "github": "fddgf",
+            "type": "Web App",
+            "task": "Développement Front-end et Back-end",
             "longDescription": "Description of Project 2 in English"
         },
         "2": {
-            "id": "2",
-            "title": "Project 2",
-            "img": "projects-hero.webp",
-            "description": "Description of Project 2 in french",
-            "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
-            "github": "",
-            "longDescription": "Description of Project 2 in English"
-        },
-        "3": {
             "id": "3",
             "title": "Portfolio Dev",
             "img": "projects-hero.webp",

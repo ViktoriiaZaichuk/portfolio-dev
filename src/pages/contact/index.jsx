@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import heroImg from "../../assets/img/pages/contact-hero.webp";
@@ -8,6 +8,12 @@ import Button from "../../components/ui/Button";
 
 
 const Contact = () => {
+    // Update the document title
+    useEffect(() => {
+        document.title = 'Contact - Viktoriia Zaichuk';
+    }, []);
+
+
     const { t } = useTranslation();
 
     const emailAddress = 'viktoriia.zaichuk@gmail.com';
