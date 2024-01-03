@@ -13,8 +13,8 @@
         }
         svg {
             display: inline-block;
-            path {
-                fill: $text-color;
+            > path {
+                fill: $text-color !important;
             }
         }
     }
