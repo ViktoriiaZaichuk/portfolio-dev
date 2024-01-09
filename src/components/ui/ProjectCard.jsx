@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ProjectCard = ({ title, description, tags, projectId, img }) => {
-    const imgPath = require(`../../assets/img/pages/${img}`);
+    const imgPath = require(`../../assets/img/projects/${img}`);
 
     return (
         <Link to={`/project/${projectId}`} className="project-card-link">

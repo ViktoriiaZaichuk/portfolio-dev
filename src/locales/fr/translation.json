@@ -31,22 +31,32 @@
         "1": {
             "id": "1",
             "title": "Geosint",
-            "img": "projects-hero.webp",
-            "description": "Description of Project 1 in french",
-            "tags": "#react #nodejs #postgresql #expressjs #apirest #sass #bootstrap",
-            "github": "fddgf",
+            "img": "geosint.png",
+            "description": "GeO’sint est une application dédiée aux passionnés d'OSINT, offrant aux utilisateurs la possibilité de créer des défis basés sur leurs photos. Les utilisateurs téléchargent une image, spécifient la réponse, puis partagent le défi avec la communauté ou leurs amis.",
+            "tags": "#react #axios #sass #nodejs #expressjs #postgresql #sequelize #apirest",
+            "github": "Geosint Github",
+            "githubLink": "https://github.com/ViktoriiaZaichuk/geosint-front",
             "type": "Web App",
-            "task": "Développement Front-end et Back-end",
-            "longDescription": "Description of Project 2 in English"
+            "task": "Le parcours de développement de GeO’sint a débuté par une approche complète, englobant la conception de la base de données, la recherche utilisateur et le prototypage de l'interface. Du wireframing au développement frontend et backend, chaque étape a été méticuleusement élaborée pour offrir une expérience OSINT captivante à la fois pour les challengers chevronnés 'Geek' et les joueurs novices 'Noob'.",
+            "longDescription01": "Le projet GeO’sint vise à offrir une expérience OSINT captivante en permettant aux utilisateurs de créer des challenges basés sur leurs photos. De l'inscription à la participation aux classements, l'application est conçue pour satisfaire les besoins des 'Geeks' créateurs de challenges et des 'Noobs' joueurs novices. Les utilisateurs peuvent télécharger des photos, spécifier les réponses attendues, et partager les challenges avec la communauté ou des amis restreints. La plateforme offre des classements généraux et spécifiques aux groupes d'amis, ajoutant une dimension sociale et compétitive.",
+            "longDescription02": "Notre approche repose sur une conception centrée sur l'utilisateur et des tests continus pour optimiser la performance. Les fonctionnalités bonus, telles que la possibilité de répondre à un challenge en se positionnant sur une carte, renforcent l'engagement des utilisateurs. Le projet GeO’sint intègre des fonctionnalités bonus, notamment un thème sombre, des commentaires sur les challenges, et la création de groupes, pour répondre à une variété d'intérêts et de préférences. En somme, GeO’sint offre une expérience OSINT interactive, engageante, et adaptable, adaptée à un large éventail d'utilisateurs, des passionnés chevronnés aux joueurs novices.",
+            "img01": "geosint-01.png",
+            "img02": "geosint-01.png"
         },
         "2": {
-            "id": "3",
+            "id": "2",
             "title": "Portfolio Dev",
-            "img": "projects-hero.webp",
-            "description": "Description of Project 2 in English",
-            "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
-            "github": "https://github.com/ViktoriiaZaichuk/portfolio-dev",
-            "longDescription": "Description of Project 2 in English"
+            "img": "devfolio.png",
+            "description": "Le projet de Portfolio React est une application monopage dynamique conçue avec React, visant à présenter un portfolio en ligne visuellement attractif. Il se concentre sur la mise en valeur efficace des compétences, des projets passés et des réalisations de manière conviviale, en combinant fonctionnalité et design élégant.",
+            "tags": "#react #sass #gh-pages #react-i18next #css3",
+            "github": "Portfolio Dev",
+            "githubLink": "https://github.com/ViktoriiaZaichuk/portfolio-dev",
+            "type": "Development Portfolio",
+            "task": "Le défi pour le projet de Portfolio React consiste à concevoir et implémenter une application monopage réactive qui met en valeur de manière efficace les compétences, présente les projets réalisés et offre une expérience utilisateur captivante. L'objectif est de fusionner la fonctionnalité avec un design élégant pour créer un portfolio en ligne exceptionnel.",
+            "longDescription01": "Le projet Portfolio React se concentre sur le développement d'un portfolio en ligne en utilisant le framework React. Cette entreprise englobe la création d'une application monopage réactive et visuellement frappante, visant à présenter une variété de compétences et de projets dans un format organisé et esthétiquement plaisant.",
+            "longDescription02": "L'objectif principal est de concevoir un portfolio interactif qui ne fournit pas seulement des informations essentielles sur le développeur, mais qui engage également les visiteurs grâce à une navigation fluide et une interface utilisateur attrayante. En tirant parti de l'architecture basée sur les composants de React, le projet intègre des fonctionnalités dynamiques telles que des galeries de projets, des animations de compétences et un système de navigation intuitif. Pour relever le défi, le processus de développement inclut une conception complète de l'interface utilisateur (UI) et de l'expérience utilisateur (UX), garantissant que le portfolio soit visuellement attrayant et convivial sur différents appareils. De plus, le projet intègre la gestion de l'état, le routage.",
+            "img01": "devfolio-01.png",
+            "img02": "geosint-01.png"
         }
     }
 }

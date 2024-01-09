@@ -32,23 +32,33 @@
         "1": {
             "id": "1",
             "title": "Geosint",
-            "img": "projects-hero.webp",
-            "description": "Description of Project 1 in English",
-            "tags": "#react #nodejs #expressjs #sass #bootstrap",
-            "github": "",
-            "longDescription": "Description of Project 2 in English",
-            "pictures": {
-                "" : "projects-hero.webp"
-            }
+            "img": "geosint.png",
+            "description": "GeO’sint is an app catering to OSINT enthusiasts, offering users the ability to create challenges based on their photos. Users upload an image, specify the answer, and share the challenge with the community or friends.",
+            "tags": "#react #axios #sass #nodejs #expressjs #postgresql #sequelize #apirest",
+            "github": "Geosint Github",
+            "githubLink": "https://github.com/ViktoriiaZaichuk/geosint-front",
+            "type": "Web App",
+            "task": "GeO’sint's development journey commenced with a comprehensive approach, encompassing database design, user research, and interface prototyping. From wireframing to frontend and backend development, every step was meticulously crafted to provide an engaging OSINT experience for both seasoned 'Geek' challengers and novice 'Noob' players.",
+            "longDescription01": "The GeO’sint project aims to provide a captivating OSINT experience by enabling users to create challenges based on their photos. From registration to participating in rankings, the application is designed to meet the needs of both 'Geeks' who create challenges and 'Noobs' who are novice players. Users can upload photos, specify expected answers, and share challenges with the community or a select group of friends. The platform offers general rankings as well as rankings specific to friend groups, adding a social and competitive dimension.",
+            "longDescription02": "Our approach is grounded in user-centered design and continuous testing to optimize performance. Bonus features, such as the ability to respond to a challenge by positioning oneself on a map, enhance user engagement. The GeO’sint project incorporates additional features, including a dark theme, comments on challenges, and the creation of groups, to cater to a variety of interests and preferences. In summary, GeO’sint offers an interactive, engaging, and adaptable OSINT experience suitable for a broad spectrum of users, from seasoned enthusiasts to novice players.",
+            "img01": "geosint-01.png",
+            "img02": "geosint-01.png"
         },
         "2": {
-            "id": "3",
+            "id": "2",
             "title": "Portfolio Dev",
-            "img": "projects-hero.webp",
-            "description": "Description of Project 2 in English",
-            "tags": "#react #nodejs #mongodb #expressjs #sass #bootstrap",
-            "github": "https://github.com/ViktoriiaZaichuk/portfolio-dev",
-            "longDescription": "Description of Project 2 in English"
+            "img": "devfolio.png",
+            "description": "The React Portfolio Project is an endeavor to create a dynamic and visually appealing online portfolio using React. This project focuses on showcasing skills, projects, and achievements in a streamlined and user-friendly manner.",
+            "tags": "#react #sass #gh-pages #react-i18next #css3",
+            "type": "Development Portfolio",
+            "task": "The challenge for the React Portfolio Project involves conceiving and implementing a responsive, single-page application that effectively highlights skills, features project work, and provides an engaging user experience. The goal is to blend functionality with an elegant design to create a standout online portfolio.",
+            "github": "Portfolio Dev",
+            "githubLink": "https://github.com/ViktoriiaZaichuk/portfolio-dev",
+            "type": "Development Portfolio",
+            "longDescription01": "The React Portfolio Project centers on the development of an online portfolio using the React framework. This endeavor encompasses the creation of a responsive and visually striking single-page application, aiming to showcase a range of skills and projects in an organized and aesthetically pleasing format.",
+            "longDescription02": "The primary goal is to design an interactive portfolio that not only provides essential information about the developer but also engages visitors through seamless navigation and an appealing user interface. Leveraging React's component-based architecture, the project incorporates dynamic features such as project galleries, skill animations, and an intuitive navigation system. To meet the challenge, the development process involves comprehensive user interface (UI) and user experience (UX) design, ensuring the portfolio is visually appealing and user-friendly across various devices. Additionally, the project incorporates state management, routing.",
+            "img01": "devfolio-01.png",
+            "img02": "geosint-01.png"
         }
     }
 }

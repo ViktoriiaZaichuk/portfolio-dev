@@ -13,13 +13,16 @@ const Project = () => {
     const projectDescription = t(`projects.${id}.description`);
     const projectTags = t(`projects.${id}.tags`);
     const projectGithub = t(`projects.${id}.github`);
+    const projectGithubLink = t(`projects.${id}.githubLink`);
     const projectType = t(`projects.${id}.type`);
     const projectTask = t(`projects.${id}.task`);
-    const projectImg = t(`projects.${id}.img`);
-    const projectLongDescription = t(`projects.${id}.longDescription`);
+    const projectImg = t(`projects.${id}.img01`);
+    const projectLongDescription01 = t(`projects.${id}.longDescription01`);
+    const projectLongDescription02 = t(`projects.${id}.longDescription02`);
+
 
     console.log(projectImg);
-    const imgPath = require(`../../assets/img/pages/${projectImg}`);
+    const imgPath = require(`../../assets/img/projects/${projectImg}`);
 
     // Update the document title
     useEffect(() => {
@@ -45,7 +48,11 @@ const Project = () => {
                         <span className="git">Github:</span>
                         <span>{projectType}</span>
                         <span>{projectTags}</span>
-                        <span>{projectGithub}</span>
+                        <span>
+                            <a href={projectGithubLink} target='blanc'>
+                                {projectGithub}
+                            </a>
+                        </span>
                     </div>
                     <div className="project--intro__task">
                         <span>Challenge:</span>
@@ -53,7 +60,8 @@ const Project = () => {
                     </div>
                 </div>
                 <div className="project--description">
-                    <p>{projectLongDescription}</p>
+                    <p>{projectLongDescription01}</p>
+                    <p>{projectLongDescription02}</p>
                 </div>
             </main>
         </Layout>
