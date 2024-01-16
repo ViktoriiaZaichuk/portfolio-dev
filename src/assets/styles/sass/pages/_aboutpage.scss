@@ -41,6 +41,13 @@
         background-color: $green;
         display: flex;
         justify-content: center;
+        @include screen1024 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
+        @include screen768 {
+            flex-direction: column;
+        }
         span {
             color: $purple;
             text-transform: uppercase;
@@ -56,6 +63,9 @@
             font-weight: 300;
             font-size: 1.2rem;
             text-transform: none;
+            @include screen768 {
+                margin-top: 1rem;
+            }
         }
     }
     /* Info section */
@@ -63,9 +73,17 @@
         @include flex-center;
         border-bottom: $border-color 3px solid;
         background-color: $purple;
+        @include screen1024 {
+            @include flex-column;
+        }
         &__img {
             flex: 1 1 0px;
             border-right: $border-color 3px solid;
+            @include screen1024 {
+                width: 100%;
+                border-bottom: $border-color 3px solid;
+                border-right: none;
+            }
             img {
                 display: block;
                 max-height: 1000px;
@@ -89,6 +107,10 @@
         @include layout;
         padding-top: 4rem;
         padding-bottom: 4rem;
+        @include screen1024 {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+        }
         &__txt {
             text-align: center;
             h2 {
@@ -104,6 +126,9 @@
             display: flex;
             align-items: stretch;
             gap: 1rem;
+            @include screen1024 {
+                flex-wrap: wrap;
+            }
             .skills-card {
                 flex: 1 1 0px;
                 background-color: $text-color;
