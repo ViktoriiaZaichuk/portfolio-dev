@@ -1,6 +1,9 @@
 /* 404 page */
 .error-page {
     @include flex-center;
+    @include screen550 {
+        padding: 1rem;
+    }
     a {
         display: flex;
         align-items: center;

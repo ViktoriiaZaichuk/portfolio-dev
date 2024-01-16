@@ -5,25 +5,46 @@
         min-height: 100vh;
         display: flex;
         flex: 1 1 0px;
+        @include screen1024 {
+            flex-direction: column;
+        }
         h1 {
             border-right: $border-color 3px solid;
             padding-right: 5rem;
+            @include screen1024 {
+                padding-bottom: 2rem;
+                border-right: none;
+                border-bottom: $border-color 3px solid;
+            }
         }
         &__txt {
             @include flex-column;
             width: 100%;
+            @include screen1024 {
+                border-bottom: $border-color 3px solid;
+            }
             > div {
                 display: flex;
                 flex: 1 1 0px;
+                @include screen550 {
+                    flex-direction: column;
+                }
                 > div {
                     flex: 1 1 0px;
                     padding: 2rem;
                     justify-content: center;
                     @include flex-column;
+                    @include screen1550 {
+                        padding: 1rem;
+                    }
                     
                 }
                 > div:first-child {
                     border-right: $border-color 3px solid;
+                    @include screen550 {
+                        border-right: none;
+                        border-bottom: $border-color 3px solid;
+                    }
                 }
             }
             >:first-child {
@@ -51,9 +72,20 @@
                     grid-template-columns: repeat(3, 1fr); 
                     grid-template-rows: repeat(2, auto);
                     margin-top: .5rem;
+                    @include screen1550 {
+                        grid-template-columns: repeat(1, 1fr); 
+                    }
                     a {
                         display: inline-block;
                         padding: 1rem 1rem 0 0;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            color: $purple;
+                        }
+                        @include screen1550 {
+                            padding: 1rem 0 0 0;
+                        
+                        }
                     }
                 }
             }

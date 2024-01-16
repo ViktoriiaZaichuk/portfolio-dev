@@ -4,6 +4,9 @@
     padding: 2rem 2rem 0 2rem;
     color: $black;
     border-top: $border-color 3px solid;
+    @include screen550 {
+        padding: 2rem 1rem 0 1rem;
+    }
     &--links {
         @include flex-space-between;
         align-items: start;
