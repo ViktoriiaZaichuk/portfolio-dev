@@ -246,6 +246,10 @@ a {
     justify-content: space-between;
     align-items: start;
     margin-bottom: 1rem; }
+    @media (max-width: 1024px) {
+      .footer--links {
+        display: flex;
+        flex-direction: column; } }
     .footer--links__nav {
       flex: 1 1 0px; }
       .footer--links__nav span a {
@@ -253,27 +257,46 @@ a {
         font-size: 1.8rem;
         font-weight: 600;
         text-transform: uppercase; }
+        @media (max-width: 1024px) {
+          .footer--links__nav span a {
+            font-size: 1.6rem; } }
       .footer--links__nav p {
         margin: .5rem 0 1rem 0;
         font-style: italic; }
       .footer--links__nav div a {
+        margin-right: 1rem;
+        text-transform: uppercase;
         font-weight: 600;
-        margin-right: 1rem; }
+        font-style: italic; }
+        @media (max-width: 768px) {
+          .footer--links__nav div a {
+            font-size: .8rem; } }
     .footer--links__social {
       flex: 1 1 0px;
       display: flex;
       flex-direction: column;
       align-items: start;
       justify-content: flex-start; }
+      @media (max-width: 1024px) {
+        .footer--links__social {
+          margin-top: 2rem; } }
       .footer--links__social .contact-links {
         margin-bottom: 2rem; }
+        @media (max-width: 1024px) {
+          .footer--links__social .contact-links {
+            margin-bottom: 1rem; } }
         .footer--links__social .contact-links p {
           font-weight: 600;
           font-style: italic;
           max-width: 550px;
           margin-bottom: .5rem; }
+          @media (max-width: 550px) {
+            .footer--links__social .contact-links p {
+              font-size: .9rem; } }
       .footer--links__social .social-links a {
-        margin: 0 1.5rem 0 0; }
+        margin: 0 1.5rem 0 0;
+        text-transform: uppercase;
+        font-size: .8rem; }
   .footer--legal span {
     font-size: .6rem;
     font-weight: 400; }
@@ -369,9 +392,15 @@ a {
     .home--intro__txt {
       display: flex;
       justify-content: space-between; }
+      @media (max-width: 1300px) {
+        .home--intro__txt {
+          flex-direction: column; } }
       .home--intro__txt h2 {
         max-width: 700px;
         font-size: 2rem; }
+      @media (max-width: 1300px) {
+        .home--intro__txt > div {
+          margin-top: 2rem; } }
       .home--intro__txt > div span {
         border: var(--border-color) 3px solid;
         padding: .5rem;

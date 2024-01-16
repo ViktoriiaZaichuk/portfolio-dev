@@ -49,11 +49,17 @@
         &__txt {
             display: flex;
             justify-content: space-between;
+            @include screen1300 {
+                flex-direction: column;
+            }
             h2 {
                 max-width: 700px;
                 font-size: 2rem;
             }
-            > div {
+            > div { 
+                @include screen1300 {
+                    margin-top: 2rem;
+                }
                 span {
                     border: $border-color 3px solid;
                     padding: .5rem;
