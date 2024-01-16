@@ -20,6 +20,9 @@
 /* Layout */
 @mixin layout {
   padding: 0 2rem;
+  @include screen1024 {
+    padding: 0 1rem;
+  }
 }
 
 /* Responsive */

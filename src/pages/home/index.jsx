@@ -53,8 +53,7 @@ const Home = () => {
                     </div>
                     <div className="home--intro__img">
                         <div>
-
-                        <p>{t('home.intro.p')}</p>
+                            <p>{t('home.intro.p')}</p>
                         </div>
                         <div>
                             <img src={homeIntro} alt="Web development" />

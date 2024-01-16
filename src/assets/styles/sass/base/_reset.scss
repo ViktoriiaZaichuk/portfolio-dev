@@ -33,6 +33,12 @@ h1 {
     font-family: $displayFont;
     font-weight: 400;
     text-transform: uppercase;
+    @include screen1024 {
+        font-size: 2.8rem;
+    }
+    @include screen550 {
+        font-size: 1.8rem;
+    }
 }
 
 h2, h3, h4 {
