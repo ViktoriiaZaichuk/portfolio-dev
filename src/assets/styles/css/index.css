@@ -130,6 +130,9 @@ a {
     justify-content: space-between; }
     .header--actions div:last-child {
       margin-left: 1rem; }
+    @media (max-width: 550px) {
+      .header--actions {
+        display: none; } }
   .header .burger-menu {
     z-index: 101;
     cursor: pointer;
@@ -182,13 +185,27 @@ a {
           font-family: "Lato", sans-serif;
           text-transform: uppercase;
           transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
+          @media (max-width: 1550px) {
+            .header .navbar .menu-items li a {
+              font-size: 3rem; } }
+          @media (max-width: 550px) {
+            .header .navbar .menu-items li a {
+              font-size: 2rem; } }
           .header .navbar .menu-items li a:hover {
             color: var(--purple); }
+      .header .navbar .menu-items__btns {
+        display: none; }
+        .header .navbar .menu-items__btns > div {
+          margin: 2rem 1rem; }
+        @media (max-width: 550px) {
+          .header .navbar .menu-items__btns {
+            display: flex; } }
   .header .theme-switch {
     display: flex;
     align-items: center;
     justify-content: center; }
     .header .theme-switch svg {
+      cursor: pointer;
       display: block;
       height: 100%;
       width: 100%;
@@ -201,9 +218,11 @@ a {
       .header .theme-switch svg #square {
         fill: var(--text-color); }
   .header .lang-switch {
+    cursor: pointer;
     height: 47px;
     box-shadow: var(--text-color) 2.5px 2.5px 0px 0px; }
     .header .lang-switch .custom-select {
+      cursor: pointer;
       background-color: var(--background-color);
       height: 100%;
       font-family: "Lato", sans-serif;

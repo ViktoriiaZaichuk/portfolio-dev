@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import Logo from '../header/Logo';
 import NavBurger from '../header/NavBurger';
 import NavBarMenu from '../header/NavBarMenu';
@@ -11,7 +12,7 @@ const Header = () => {
     const toggleMenu = () => {
       setMenuOpen(!isMenuOpen);
     };
-
+ 
     return (
         <header className='header'>
             <div className='header--box'>
