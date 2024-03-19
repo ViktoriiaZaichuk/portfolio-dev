@@ -183,6 +183,8 @@ a {
       align-items: center;
       justify-content: center;
       height: 100%; }
+      .header .navbar .menu-items .active-link {
+        color: var(--purple); }
       .header .navbar .menu-items li {
         cursor: pointer; }
         .header .navbar .menu-items li a {

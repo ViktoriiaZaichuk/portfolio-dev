@@ -95,6 +95,9 @@
       align-items: center;
       justify-content: center;
       height: 100%;
+      .active-link {
+        color: $purple;
+      }
       li {
         cursor: pointer;
         a {
