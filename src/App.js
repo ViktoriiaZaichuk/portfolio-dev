@@ -2,6 +2,7 @@ import React, {useContext} from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import ThemeContext from './context/ThemeContext';
+import ScrollToTopOnNavigate from './utils/scrollTop';
 
 import Home from './pages/home';
 import About from './pages/about';
@@ -15,6 +16,7 @@ const App = () => {
 
   return (
     <div className={`${theme}`}>
+      <ScrollToTopOnNavigate />
       <Routes>
         <Route path="/portfolio-dev" element={<Home />} />
         <Route path="/about" element={<About />} />
