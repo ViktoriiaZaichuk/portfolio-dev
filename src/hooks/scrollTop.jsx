@@ -6,16 +6,18 @@ const ScrollToTopOnNavigate = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-    setIsTransitioning(true); 
+    setIsTransitioning(true);
     const timeout = setTimeout(() => {
-      setIsTransitioning(false); 
+      setIsTransitioning(false);
+      window.scrollTo(0, 0);
     }, 500);
 
-    return () => clearTimeout(timeout); 
+    return () => clearTimeout(timeout);
   }, [pathname]);
 
-  return isTransitioning ? <div className="scroll-transition" /> : <div className="scroll-transition over" />;
+  return (
+    <div className={`scroll-transition ${isTransitioning ? '' : 'over'}`} />
+  );
 }
 
 export default ScrollToTopOnNavigate;

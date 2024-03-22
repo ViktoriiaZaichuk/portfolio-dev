@@ -74,9 +74,10 @@ a {
     width: 100%;
     opacity: 1; 
     background-color: $background-color;
-    clip-path: circle(100% at 50% 50%);
+    transition-duration: 0.5s;
+    transition-property: opacity display;
     &.over {
-        transition: all .9s cubic-bezier(.34,1.56,.64,1);
-        clip-path: circle(0% at 50% 0);
+        opacity: 0;
+        display: none;
     }
 }
