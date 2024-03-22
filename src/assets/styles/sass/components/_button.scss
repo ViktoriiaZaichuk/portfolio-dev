@@ -3,6 +3,11 @@
     @include button;
     background-color: $white;
     border: $black 2px solid;
-    box-shadow: $black 4px 3px 0px 0px;
+    box-shadow: $background-color 4px 3px 0px 0px;
     color: $black;
+    transition: all .3s ease-in-out; 
+    &:hover {
+        animation: btn-animate 1.4s ease-in-out alternate infinite; 
+    }
 }
+

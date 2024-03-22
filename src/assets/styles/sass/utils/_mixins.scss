@@ -70,7 +70,8 @@ $screen550: 550px;
   cursor: pointer;
   font-family: $displayFont;
   letter-spacing: 1px;
-  font-size: .9rem;
+  font-style: italic;
+  font-size: .8rem;
 }
 
 /* Project card */
@@ -82,4 +83,8 @@ $screen550: 550px;
   width: 100%;
   max-width: 360px;
   box-shadow: $text-color 7px 5px 0px 0px;
+  transition: box-shadow .4s ease-in-out;
+  &:hover {
+    box-shadow: $purple -6px -4px 0px 0px;
+  }
 }
