@@ -342,6 +342,9 @@ a {
         transition: color .3s; }
         .footer--links__social .social-links a:hover {
           color: var(--purple); }
+        @media (max-width: 550px) {
+          .footer--links__social .social-links a {
+            font-size: .6rem; } }
   .footer--legal span {
     font-size: .6rem;
     font-weight: 400; }

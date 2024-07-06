@@ -83,6 +83,10 @@
                     &:hover {
                         color: $purple;
                     }
+                    @include screen550 {
+                        font-size: .6rem;
+                    
+                    }
                 }
             }
         }
