@@ -125,6 +125,9 @@ a {
     opacity: 0;
     display: none; }
 
+.wprapper-layout {
+  position: relative; }
+
 /* HEADER */
 .header {
   position: fixed;
@@ -401,6 +404,26 @@ a {
         font-size: .8rem;
         font-weight: 300;
         color: var(--text-color); }
+
+/* src/components/Loader.css */
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100dvh;
+  width: 100dvw;
+  background-color: var(--background-color);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .loader .animation-txt {
+    color: var(--text-color);
+    font-size: 3rem;
+    text-transform: uppercase; }
+    @media (max-width: 550px) {
+      .loader .animation-txt {
+        font-size: 2rem; } }
 
 /* Home page styles */
 .home {

@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import heroImg from "../../assets/img/pages/contact-hero.webp";
 
 import Layout from "../../components/layout/Layout";
+import Loader from '../../components/ui/Loader';
 import Button from "../../components/ui/Button";
 
 
@@ -15,6 +16,14 @@ const Contact = () => {
 
 
     const { t } = useTranslation();
+
+    // GSAP animation
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 3500);
+    }, []); 
 
     const emailAddress = 'viktoriia.zaichuk@gmail.com';
     const subject = 'Hi, Viktoriia!';
@@ -28,6 +37,7 @@ const Contact = () => {
 
     return (
         <Layout>
+            {loading ? <Loader /> :
             <main className="contact">
                 <section className="contact--hero">
                     <h1>Contact</h1>
@@ -64,6 +74,7 @@ const Contact = () => {
                     </div>
                 </section>
             </main>
+            }
         </Layout>
     )
 }

@@ -1,0 +1,22 @@
+/* src/components/Loader.css */
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100dvh;
+    width: 100dvw;
+    background-color: $background-color;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .animation-txt {
+        color: $text-color;
+        font-size: 3rem;
+        text-transform: uppercase;
+        @include screen550 {
+            font-size: 2rem;
+        }
+    }
+}
+  

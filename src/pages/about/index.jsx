@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import heroImg from "../../assets/img/pages/about-hero.webp";
@@ -7,6 +7,7 @@ import pdfCv from "../../assets/files/Viktoriia_Zaichuk_CV.pdf";
 
 import Layout from "../../components/layout/Layout";
 import Button from "../../components/ui/Button";
+import Loader from '../../components/ui/Loader';
 
 const About = () => {
     // Update the document title
@@ -15,6 +16,14 @@ const About = () => {
     }, []);
 
     const { t } = useTranslation();
+
+    // GSAP animation
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 3500);
+    }, []); 
 
     // Download CV
     const handleDownload = () => {
@@ -28,6 +37,7 @@ const About = () => {
 
     return (
         <Layout>
+            {loading ? <Loader /> :
             <main className="about">
                 <section className="about--hero">
                     <div className="about--hero__txt">
@@ -111,6 +121,7 @@ const About = () => {
                     </div>
                 </section>
             </main>
+            }
         </Layout>
     ) 
 }

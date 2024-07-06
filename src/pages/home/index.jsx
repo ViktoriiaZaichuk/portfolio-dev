@@ -1,7 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { gsap } from "gsap";
 
 import Layout from "../../components/layout/Layout";
+import Loader from '../../components/ui/Loader';
 import homeHero from "../../assets/img/pages/home-hero.webp";
 import homeIntro from "../../assets/img/pages/home-intro.webp";
 import ProjectCard from "../../components/ui/ProjectCard";
@@ -15,9 +17,25 @@ const Home = () => {
             document.title = 'Portfolio - Viktoriia Zaichuk';
         };
     }, []);
-    
+     
     const selectedLanguage = localStorage.getItem('language');
     const { t } = useTranslation();
+        
+    // GSAP animation
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 3500);
+    }, []); 
+
+    useEffect(() => {
+        if (!loading) {
+            gsap.fromTo(".hp-gsap-h6", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 1 });
+            gsap.fromTo(".hp-gsap-h1", { opacity: 0, y: -20 }, { opacity: 1, y: 0, duration: 1, delay: 0.5 });
+        }
+        console.log('loading:', loading);
+    }, [loading]);
 
     let projectsData;
     if (selectedLanguage === 'fr') {
@@ -30,12 +48,13 @@ const Home = () => {
     const projects = projectsData.projects;
 
     return (
-        <Layout>
+        <Layout> 
+            {loading ? <Loader /> :
             <main className="home">
                 <section className="home--hero">
                     <div className="home--hero__txt">
-                        <h6>{t('home.hero.description')}</h6>
-                        <h1>{t('home.hero.title')}</h1>
+                        <h6 className='hp-gsap-h6'>{t('home.hero.description')}</h6>
+                        <h1 className='hp-gsap-h1'>{t('home.hero.title')}</h1>
                     </div>
                     <div className="home--hero__img">
                         <img src={homeHero} alt="Web developer" />
@@ -87,6 +106,7 @@ const Home = () => {
                     </Link>
                 </section>
             </main>
+            }
         </Layout>
     )
 }

@@ -1,11 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
 import Layout from "../../components/layout/Layout";
+import Loader from '../../components/ui/Loader';
 
 const Project = () => {
     const { t } = useTranslation();
+
+    // GSAP animation
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 3500);
+    }, []); 
 
     const { id } = useParams();
 
@@ -31,6 +40,7 @@ const Project = () => {
 
     return (
         <Layout>
+            {loading ? <Loader /> :
             <main className="project">
                 <div className="project--hero">
                     <div className="project--hero__txt">
@@ -64,6 +74,7 @@ const Project = () => {
                     <p>{projectLongDescription02}</p>
                 </div>
             </main>
+            }
         </Layout>
     )
 }

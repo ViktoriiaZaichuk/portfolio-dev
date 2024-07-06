@@ -1,10 +1,11 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import heroImg from "../../assets/img/pages/projects-hero.webp";
 
 import Layout from "../../components/layout/Layout";
 import ProjectCard from "../../components/ui/ProjectCard";
+import Loader from '../../components/ui/Loader';
 
 const Projects = () => {
     // Update the document title
@@ -14,6 +15,14 @@ const Projects = () => {
 
     const selectedLanguage = localStorage.getItem('language');
     const { t } = useTranslation();
+
+    // GSAP animation
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => {
+            setLoading(false);
+        }, 3500);
+    }, []); 
 
     let projectsData;
     if (selectedLanguage === 'fr') {
@@ -27,6 +36,7 @@ const Projects = () => {
 
     return (
         <Layout>
+            {loading ? <Loader /> :
             <main className="projects">
                 <section className="projects--hero">
                     <div className="projects--hero__img">
@@ -50,6 +60,7 @@ const Projects = () => {
                     ))}
                 </section>
             </main>
+            }
         </Layout>
     )
 }
