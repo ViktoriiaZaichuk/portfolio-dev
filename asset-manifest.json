@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio-dev/static/css/main.282c632a.css",
+    "main.css": "/portfolio-dev/static/css/main.5c06a338.css",
     "main.js": "/portfolio-dev/static/js/main.5bd879ea.js",
     "static/media/Viktoriia_Zaichuk_CV.pdf": "/portfolio-dev/static/media/Viktoriia_Zaichuk_CV.5a07b96319cde6592cd2.pdf",
     "static/media/about-hero.webp": "/portfolio-dev/static/media/about-hero.64d1035807fbb1a0b3a9.webp",
@@ -16,11 +16,11 @@
     "static/media/light.svg": "/portfolio-dev/static/media/light.3fcadb5dc2183ec38a81eca0edffe3a5.svg",
     "static/media/dark.svg": "/portfolio-dev/static/media/dark.942e34c17816955304541b29625ba02d.svg",
     "index.html": "/portfolio-dev/index.html",
-    "main.282c632a.css.map": "/portfolio-dev/static/css/main.282c632a.css.map",
+    "main.5c06a338.css.map": "/portfolio-dev/static/css/main.5c06a338.css.map",
     "main.5bd879ea.js.map": "/portfolio-dev/static/js/main.5bd879ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.282c632a.css",
+    "static/css/main.5c06a338.css",
     "static/js/main.5bd879ea.js"
   ]
 }
