@@ -21,16 +21,13 @@ const App = () => {
     <div className={`${theme}`}>
       <ScrollToTopOnNavigate />
       <Routes>
-        <Route path="/portfolio-dev" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/project/:id" element={<Project />} />
-        <Route path="*" element={<ErrorPage />} />
-
-
-        // chez gosha restaurant
         <Route path="/chez-gosha" element={<Restaurant />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </div>
   );
