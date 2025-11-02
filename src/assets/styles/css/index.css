@@ -942,6 +942,512 @@ a {
         height: 100%;
         object-fit: cover; }
 
+/* ==================== BASE STYLES - BRUTALIST ==================== */
+.restaurant-container {
+  min-height: 100vh;
+  font-family: Arial, "Helvetica Neue", sans-serif;
+  position: relative;
+  overflow-x: hidden; }
+
+/* Heavy concrete grain texture */
+.restaurant-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 300 300' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 1;
+  pointer-events: none;
+  z-index: 1;
+  filter: grayscale(100%); }
+
+.main-content {
+  position: relative;
+  z-index: 2; }
+
+/* ==================== LOADING SCREEN ==================== */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #CC3333; }
+
+.loading-content {
+  text-align: center; }
+
+.loading-symbol {
+  font-size: 5rem;
+  margin-bottom: 1.5rem; }
+
+.loading-title {
+  font-size: clamp(2rem, 10vw, 7rem);
+  font-weight: 900;
+  color: #E8E8E0;
+  margin-bottom: 2rem;
+  font-family: "Arial Black", "Impact", sans-serif;
+  letter-spacing: 0.15em;
+  text-transform: uppercase; }
+
+.loading-subtitle {
+  color: #E8E8E0;
+  font-size: clamp(0.75rem, 2.5vw, 1rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  padding: 0 1rem;
+  font-weight: 700; }
+
+/* ==================== MAIN CONTENT ==================== */
+.main-content {
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  padding: 0; }
+
+/* ==================== COMMUNIST BANNER ==================== */
+.communist-banner {
+  color: #CC3333;
+  padding: 1.2rem;
+  text-align: center;
+  margin-bottom: 0;
+  border: none;
+  position: relative; }
+
+.banner-symbol {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.5rem;
+  color: #CC3333; }
+
+.banner-symbol-left {
+  left: 2rem; }
+
+.banner-symbol-right {
+  right: 2rem; }
+
+.banner-text {
+  color: #CC3333;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0; }
+
+/* ==================== HEADER - BRUTALIST ==================== */
+.restaurant-header {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 4rem 2rem;
+  border: none;
+  position: relative;
+  box-shadow: none; }
+
+.restaurant-name {
+  font-size: clamp(2.5rem, 10vw, 12rem);
+  font-weight: 900;
+  color: #1A1A1A;
+  line-height: 0.85;
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+  font-family: "Arial Black", "Impact", sans-serif;
+  text-transform: uppercase;
+  text-shadow: none;
+  position: relative; }
+
+/* Force smaller size on mobile */
+@media (max-width: 600px) {
+  .restaurant-name {
+    font-size: clamp(2rem, 11vw, 4rem); } }
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .restaurant-name {
+    font-size: clamp(3rem, 9vw, 7rem); } }
+
+.restaurant-badge {
+  display: inline-block;
+  background-color: #1A1A1A;
+  color: #E8E8E0;
+  padding: 0.8rem 2.5rem;
+  margin: 2rem 0 0 0;
+  transform: none;
+  border: none;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); }
+
+.badge-text {
+  font-size: clamp(0.7rem, 2vw, 0.9rem);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-weight: 900;
+  margin: 0; }
+
+.restaurant-subtitle {
+  color: #1A1A1A;
+  font-size: clamp(0.75rem, 2vw, 0.9rem);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 2rem; }
+
+/* ==================== PROPAGANDA MESSAGE ==================== */
+.propaganda-message {
+  border: none;
+  padding: 1.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  position: relative; }
+
+.propaganda-text {
+  font-size: clamp(1rem, 3vw, 1.5rem);
+  font-weight: 900;
+  color: #CC3333;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0; }
+
+/* ==================== DESCRIPTION SECTION ==================== */
+.description-section {
+  margin-bottom: 0;
+  background-color: #1A1A1A;
+  padding: 3rem clamp(1.5rem, 5vw, 4rem);
+  border: none;
+  position: relative; }
+
+.description-content {
+  max-width: 800px;
+  margin: 0 auto; }
+
+.description-intro {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  line-height: 1.6;
+  color: #E8E8E0;
+  margin-bottom: 2rem;
+  text-align: left;
+  font-weight: 400; }
+
+.description-highlight-box {
+  background-color: #CC3333;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-left: none;
+  clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 98%); }
+
+.description-highlight {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  color: #E8E8E0;
+  margin: 0;
+  font-weight: 400; }
+
+.description-footer {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  line-height: 1.6;
+  color: #E8E8E0;
+  text-align: left;
+  font-weight: 400; }
+
+/* Text styling utilities */
+.highlight-bold {
+  color: #CC3333;
+  font-style: normal;
+  font-weight: 900;
+  background-color: #E8E8E0;
+  padding: 0 0.3rem; }
+
+.highlight {
+  color: #CC3333;
+  font-weight: 900;
+  background-color: #E8E8E0;
+  padding: 0 0.3rem; }
+
+.highlight-emphasis {
+  color: #E8E8E0;
+  font-weight: 900;
+  text-transform: uppercase;
+  background-color: #CC3333;
+  padding: 0 0.3rem; }
+
+.text-semibold {
+  font-weight: 700; }
+
+.text-italic {
+  font-style: normal;
+  font-weight: 700; }
+
+/* ==================== EVENT SECTION - BRUTALIST ==================== */
+.event-section {
+  margin-bottom: 0;
+  text-align: center;
+  padding: 4rem clamp(1.5rem, 6vw, 4rem);
+  background-color: #CC3333;
+  position: relative;
+  border: none;
+  box-shadow: none;
+  border-top: 8px solid #1A1A1A;
+  border-bottom: 8px solid #1A1A1A; }
+
+.event-stars-top,
+.event-stars-bottom {
+  font-size: 2.5rem;
+  color: #1A1A1A; }
+
+.event-stars-top {
+  margin-bottom: 1.5rem; }
+
+.event-stars-bottom {
+  margin-top: 2rem; }
+
+.event-order {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 0.65rem;
+  margin-bottom: 2rem;
+  color: #1A1A1A;
+  font-weight: 900;
+  background-color: #E8E8E0;
+  display: inline-block;
+  padding: 0.5rem 2rem; }
+
+.event-date {
+  font-size: clamp(2rem, 8vw, 8rem);
+  font-weight: 900;
+  color: #E8E8E0;
+  margin-bottom: 0.5rem;
+  line-height: 0.9;
+  font-family: "Arial Black", "Impact", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-shadow: 6px 6px 0px #1A1A1A; }
+
+.event-divider {
+  margin: 2.5rem 0;
+  font-size: clamp(1rem, 3vw, 1.8rem);
+  color: #1A1A1A; }
+
+.event-time {
+  font-size: clamp(1.8rem, 7vw, 7rem);
+  font-weight: 900;
+  color: #E8E8E0;
+  font-family: "Arial Black", "Impact", sans-serif;
+  letter-spacing: 0.2em;
+  text-shadow: 6px 6px 0px #1A1A1A;
+  margin-bottom: 1.5rem; }
+
+.event-note {
+  font-size: clamp(0.65rem, 2vw, 0.8rem);
+  color: #1A1A1A;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  font-weight: 700;
+  background-color: #E8E8E0;
+  display: inline-block;
+  padding: 0.3rem 1rem; }
+
+/* ==================== WARNING BANNER ==================== */
+.warning-banner {
+  background-color: #1A1A1A;
+  border: none;
+  padding: 1.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  transform: none;
+  border-top: 4px solid #CC3333;
+  border-bottom: 4px solid #CC3333; }
+
+.warning-text {
+  font-size: clamp(0.75rem, 2vw, 1rem);
+  font-weight: 900;
+  color: #E8E8E0;
+  margin: 0; }
+
+/* ==================== MENU SECTION ==================== */
+.menu-section {
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem clamp(1.5rem, 5vw, 4rem);
+  border: none;
+  position: relative; }
+
+.menu-badge {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #CC3333;
+  color: #E8E8E0;
+  padding: 0.5rem 2rem;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  border: none;
+  clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%); }
+
+.menu-title {
+  font-size: clamp(1.3rem, 3.5vw, 2.5rem);
+  color: #1A1A1A;
+  font-style: normal;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-weight: 900;
+  line-height: 1.2;
+  text-transform: uppercase; }
+
+.menu-classified {
+  background-color: #1A1A1A;
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%); }
+
+.menu-classified-text {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #E8E8E0;
+  font-weight: 700;
+  margin: 0; }
+
+.menu-quote {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: #1A1A1A;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 2rem; }
+
+.menu-quote-author {
+  font-size: 0.85em;
+  font-weight: 700; }
+
+/* ==================== FOOTER ==================== */
+.restaurant-footer {
+  text-align: center;
+  padding: 3rem 2rem;
+  border-top: none;
+  background-color: #1A1A1A; }
+
+.footer-symbol {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #CC3333; }
+
+.footer-quote {
+  color: #E8E8E0;
+  font-style: normal;
+  font-size: clamp(0.95rem, 2.5vw, 1.15rem);
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 2rem; }
+
+.footer-badge {
+  display: inline-block;
+  background-color: #CC3333;
+  color: #E8E8E0;
+  padding: 0.8rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%); }
+
+.footer-badge-text {
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  font-weight: 900;
+  margin: 0;
+  letter-spacing: 0.15em; }
+
+.footer-stamp {
+  font-size: 0.7rem;
+  color: #999;
+  margin-top: 2rem;
+  font-style: normal;
+  font-weight: 400; }
+
+/* ==================== RESPONSIVE ADJUSTMENTS ==================== */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 0; }
+  .banner-symbol {
+    font-size: 1.8rem; }
+  .banner-symbol-left {
+    left: 1rem; }
+  .banner-symbol-right {
+    right: 1rem; }
+  .restaurant-header {
+    padding: 3rem 1.5rem; }
+  .event-section {
+    padding: 3rem 1.5rem; }
+  .event-date {
+    font-size: clamp(1.8rem, 7vw, 4rem);
+    text-shadow: 4px 4px 0px #1A1A1A; }
+  .event-time {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    text-shadow: 4px 4px 0px #1A1A1A; }
+  .loading-symbol {
+    font-size: 3.5rem; }
+  .loading-title {
+    font-size: clamp(1.8rem, 8vw, 4rem); }
+  .footer-symbol {
+    font-size: 2.5rem; }
+  .description-intro,
+  .description-highlight,
+  .description-footer {
+    font-size: clamp(0.95rem, 3vw, 1.1rem); }
+  .menu-title {
+    font-size: clamp(1.2rem, 4.5vw, 1.8rem); }
+  .footer-quote {
+    font-size: clamp(0.9rem, 3vw, 1.05rem); } }
+
+@media (max-width: 480px) {
+  .communist-banner {
+    padding: 1rem; }
+  .banner-text {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em; }
+  .banner-symbol {
+    font-size: 1.5rem; }
+  .banner-symbol-left {
+    left: 0.5rem; }
+  .banner-symbol-right {
+    right: 0.5rem; }
+  .restaurant-header {
+    padding: 2.5rem 1rem; }
+  .restaurant-badge {
+    padding: 0.6rem 1.5rem; }
+  .badge-text {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em; }
+  .event-section {
+    padding: 2.5rem 1rem;
+    border-top: 5px solid #1A1A1A;
+    border-bottom: 5px solid #1A1A1A; }
+  .event-date {
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    text-shadow: 3px 3px 0px #1A1A1A; }
+  .event-time {
+    font-size: clamp(1.3rem, 5.5vw, 2.5rem);
+    text-shadow: 3px 3px 0px #1A1A1A; }
+  .event-stars-top,
+  .event-stars-bottom {
+    font-size: 2rem; }
+  .propaganda-message {
+    padding: 1rem; }
+  .propaganda-text {
+    font-size: 0.9rem; }
+  .description-section {
+    padding: 2.5rem 1.5rem; }
+  .menu-section {
+    padding: 3rem 1.5rem; }
+  .menu-title {
+    font-size: clamp(1.1rem, 4vw, 1.6rem); }
+  .restaurant-footer {
+    padding: 2.5rem 1.5rem; }
+  .loading-title {
+    font-size: clamp(1.5rem, 7vw, 3rem); } }
+
 /* 404 page */
 .error-page {
   display: flex;
