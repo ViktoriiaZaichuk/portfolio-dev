@@ -35,38 +35,43 @@ const Restaurant = () => {
             <div className="main-content">
                 
                 {/* Communist banner top */}
-                <div className="communist-banner">
-                    <div className="banner-symbol banner-symbol-left">☭</div>
-                    <div className="banner-symbol banner-symbol-right">☭</div>
-                    <p className="banner-text">☆ DÎNER DU PEUPLE 2025 ☆</p>
-                </div>
-
-                {/* Header - Restaurant Name */}
-                <header className="restaurant-header">
-                    <h1 className="restaurant-name">
-                        PEREZTROIKA
-                    </h1>
-                    
-                    <div className="restaurant-badge">
-                        <p className="badge-text">RESTAURANT DU CAMARADE</p>
+                <div className='header-container'>
+                    <div className="communist-banner">
+                        <div className="banner-symbol banner-symbol-left">☭</div>
+                        <div className="banner-symbol banner-symbol-right">☭</div>
+                        <p className="banner-text">☆ DÎNER DU PEUPLE 2025 ☆</p>
                     </div>
 
-                    <p className="restaurant-subtitle">
-                        Cuisine Ukrainienne • Ambiance Soviétique
-                    </p>
-                </header>
+                    {/* Header - Restaurant Name */}
+                    <header className="restaurant-header">
+                        <div className="restaurant-header-content">
+
+                            <h1 className="restaurant-name">
+                                PEREZTROIKA
+                            </h1>
+                            
+                            <div className="restaurant-badge">
+                                <p className="badge-text">RESTAURANT DU CAMARADE</p>
+                            </div>
+
+                            <p className="restaurant-subtitle">
+                                Cuisine Ukrainienne • Ambiance Soviétique
+                            </p>
+                        </div>
+                    </header>
+                </div>
 
                 {/* Propaganda poster style message */}
-                <div className="propaganda-message">
-                    <p className="propaganda-text"> CONVOCATION OFFICIELLE </p>
-                </div>
 
                 {/* Restaurant Description */}
                 <section className="description-section">
                     <div className="description-content">
+                    <div className="propaganda-message">
+                        <p className="propaganda-text"> CONVOCATION OFFICIELLE </p>
+                    </div>
                         <p className="description-intro">
                             <span className="text-semibold"> Votre présence est requise au </span> <span className="highlight-bold">Restaurant Pereztroika</span>, 
-                            <span className="text-semibold"> établissement d'état où 'hospitalité ukrainienne rencontre la nostalgie soviétique.</span> ! 
+                            <span className="text-semibold"> établissement d'état où l'hospitalité ukrainienne rencontre la nostalgie soviétique</span>! 
                         </p>
                         
                         <p className="description-footer">
