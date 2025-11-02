@@ -1257,9 +1257,7 @@ a {
   padding: 1.5rem;
   margin-bottom: 0;
   text-align: center;
-  transform: none;
-  border-top: 4px solid #CC3333;
-  border-bottom: 4px solid #CC3333; }
+  transform: none; }
 
 .warning-text {
   font-size: clamp(0.75rem, 2vw, 1rem);
@@ -1324,6 +1322,206 @@ a {
   font-size: 0.85em;
   font-weight: 700; }
 
+/* ==================== DRINKS DIRECTIVE SECTION ==================== */
+.drinks-directive {
+  margin-top: 4rem;
+  padding: 0;
+  position: relative;
+  border: 8px solid #CC3333; }
+
+.drinks-badge {
+  background-color: #CC3333;
+  color: #E8E8E0;
+  padding: 0.6rem 2rem;
+  font-size: clamp(0.65rem, 1.8vw, 0.75rem);
+  font-weight: 900;
+  letter-spacing: 0.3em;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 4px solid #1A1A1A; }
+
+.drinks-content {
+  padding: 2.5rem clamp(1.5rem, 4vw, 3rem); }
+
+.drinks-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem; }
+
+.drinks-symbol {
+  font-size: clamp(1.5rem, 3vw, 2rem); }
+
+.drinks-title {
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  font-weight: 900;
+  color: #1A1A1A;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin: 0;
+  text-align: center; }
+
+.drinks-text {
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  line-height: 1.7;
+  color: #1A1A1A;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 400; }
+
+.drinks-highlight {
+  color: #E8E8E0;
+  font-weight: 900;
+  background-color: #1A1A1A;
+  padding: 0 0.4rem; }
+
+.drinks-emphasis-box {
+  background-color: #CC3333;
+  padding: 1.5rem 2rem;
+  margin: 2rem 0;
+  position: relative;
+  clip-path: polygon(2% 0%, 100% 0%, 98% 100%, 0% 100%); }
+
+.drinks-emphasis {
+  font-size: clamp(0.9rem, 2vw, 1.05rem);
+  line-height: 1.6;
+  color: #E8E8E0;
+  text-align: center;
+  margin: 0;
+  font-weight: 400; }
+
+.drinks-emphasis strong {
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  font-size: 1.1em; }
+
+.drinks-stamp {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent;
+  border: 3px solid #CC3333;
+  color: #CC3333;
+  font-size: clamp(0.7rem, 1.8vw, 0.85rem);
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%); }
+
+/* ==================== RESPONSIVE - DRINKS SECTION ==================== */
+@media (max-width: 768px) {
+  .drinks-content {
+    padding: 2rem 1.5rem; }
+  .drinks-header {
+    gap: 1rem; }
+  .drinks-symbol {
+    font-size: 1.3rem; }
+  .drinks-emphasis-box {
+    padding: 1.2rem 1.5rem; } }
+
+@media (max-width: 480px) {
+  .drinks-directive {
+    border: 5px solid #CC3333; }
+  .drinks-content {
+    padding: 1.5rem 1rem; }
+  .drinks-header {
+    gap: 0.8rem;
+    flex-wrap: wrap; }
+  .drinks-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem; }
+  .drinks-emphasis-box {
+    padding: 1rem;
+    margin: 1.5rem 0; }
+  .drinks-stamp {
+    font-size: 0.65rem;
+    padding: 0.6rem 1rem; } }
+
+/* ==================== DRESS CODE SECTION ==================== */
+.dress-code-section {
+  background-color: #1A1A1A;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  border-top: 4px solid #CC3333;
+  border-bottom: 4px solid #CC3333; }
+
+.dress-code-badge {
+  background-color: #CC3333;
+  color: #E8E8E0;
+  padding: 0.6rem 2rem;
+  font-size: clamp(0.6rem, 1.8vw, 0.7rem);
+  font-weight: 900;
+  letter-spacing: 0.35em;
+  text-align: center;
+  text-transform: uppercase; }
+
+.dress-code-content {
+  padding: 2rem clamp(1.5rem, 4vw, 3rem); }
+
+.dress-code-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+.dress-code-symbol {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  color: #E8E8E0; }
+
+.dress-code-title {
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 900;
+  color: #E8E8E0;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin: 0;
+  text-align: center; }
+
+.dress-code-text {
+  font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+  line-height: 1.7;
+  color: #E8E8E0;
+  text-align: center;
+  margin: 0;
+  font-weight: 400; }
+
+.dress-code-highlight {
+  color: #CC3333;
+  font-weight: 900;
+  background-color: #E8E8E0;
+  padding: 0 0.4rem;
+  text-transform: uppercase; }
+
+/* ==================== RESPONSIVE - DRESS CODE SECTION ==================== */
+@media (max-width: 768px) {
+  .dress-code-content {
+    padding: 1.5rem 1.5rem; }
+  .dress-code-header {
+    gap: 1rem; }
+  .dress-code-symbol {
+    font-size: 1.3rem; } }
+
+@media (max-width: 480px) {
+  .dress-code-section {
+    border-top: 3px solid #CC3333;
+    border-bottom: 3px solid #CC3333; }
+  .dress-code-content {
+    padding: 1.2rem 1rem; }
+  .dress-code-header {
+    gap: 0.8rem;
+    flex-wrap: wrap; }
+  .dress-code-badge {
+    padding: 0.5rem 1rem;
+    font-size: 0.55rem;
+    letter-spacing: 0.25em; }
+  .dress-code-text {
+    font-size: clamp(0.9rem, 3vw, 1rem); } }
+
 /* ==================== FOOTER ==================== */
 .restaurant-footer {
   text-align: center;
@@ -1346,8 +1544,7 @@ a {
 
 .footer-badge {
   display: inline-block;
-  background-color: #CC3333;
-  color: #E8E8E0;
+  color: #CC3333;
   padding: 0.8rem 2rem;
   margin-top: 1rem;
   border: none;
@@ -1358,13 +1555,6 @@ a {
   font-weight: 900;
   margin: 0;
   letter-spacing: 0.15em; }
-
-.footer-stamp {
-  font-size: 0.7rem;
-  color: #999;
-  margin-top: 2rem;
-  font-style: normal;
-  font-weight: 400; }
 
 /* ==================== RESPONSIVE ADJUSTMENTS ==================== */
 @media (max-width: 768px) {

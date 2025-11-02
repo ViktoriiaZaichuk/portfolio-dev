@@ -23,7 +23,6 @@ const Restaurant = () => {
                     <div className="loading-content">
                         <div className="loading-symbol">☭</div>
                         <h1 className="loading-title">PEREZTROIKA</h1>
-                        <p className="loading-subtitle">Camarade, prépare ton estomac !</p>
                     </div>
                 </div>
             )}
@@ -35,7 +34,7 @@ const Restaurant = () => {
                 <div className="communist-banner">
                     <div className="banner-symbol banner-symbol-left">☭</div>
                     <div className="banner-symbol banner-symbol-right">☭</div>
-                    <p className="banner-text">★ DÎNER DU PEUPLE 2025 ★</p>
+                    <p className="banner-text">☆ DÎNER DU PEUPLE 2025 ☆</p>
                 </div>
 
                 {/* Header - Restaurant Name */}
@@ -62,20 +61,9 @@ const Restaurant = () => {
                 <section className="description-section">
                     <div className="description-content">
                         <p className="description-intro">
-                            Bienvenue au <span className="highlight-bold">Restaurant Pereztroika</span>, 
-                            établissement <span className="text-semibold">certifié par le Soviet Suprême de la Gastronomie</span> ! 
-                            L'hospitalité ukrainienne rencontre la nostalgie soviétique dans une atmosphère 
-                            aussi chaleureuse qu'un <span className="highlight">samovar collectiviste</span>.
+                            Votre présence est requise au <span className="highlight-bold">Restaurant Pereztroika</span>, 
+                            établissement <span className="text-semibold"> établissement d'état où 'hospitalité ukrainienne rencontre la nostalgie soviétique.</span> ! 
                         </p>
-                        
-                        <div className="description-highlight-box">
-                            <p className="description-highlight">
-                                Notre <span className="text-semibold">chef prolétaire</span> vous promet une soirée où les portions sont 
-                                aussi généreuses que les promesses du <span className="highlight-bold">Plan Quinquennal</span>, 
-                                où la vodka coule comme les discours du <span className="highlight-bold">Politburo</span>, 
-                                et où chaque bouchée célèbre la <span className="text-italic">gloire du collectivisme culinaire</span> !
-                            </p>
-                        </div>
                         
                         <p className="description-footer">
                             Ici, nous servons la <em className="highlight-emphasis">vraie</em> cuisine du peuple : 
@@ -100,11 +88,28 @@ const Restaurant = () => {
                 </section>
 
                 {/* Warning banner */}
-                <div className="warning-banner">
+                {/* <div className="warning-banner">
                     <p className="warning-text">
-                        ⚠️ ATTENTION CAMARADES : Les retardataires seront envoyés au goulag ⚠️
+                        ⚠  ATTENTION CAMARADES : Les retardataires seront envoyés au goulag  ⚠
                     </p>
-                </div>
+                </div> */}
+
+                {/* DRESS CODE SECTION */}
+                <section className="dress-code-section">
+                   {/*  <div className="dress-code-badge">DIRECTIVE VESTIMENTAIRE</div> */}
+                    
+                    <div className="dress-code-content">
+                        <div className="dress-code-header">
+                            <span className="dress-code-symbol">⚑</span>
+                            <h3 className="dress-code-title">TENUE OBLIGATOIRE</h3>
+                            <span className="dress-code-symbol">⚑</span>
+                        </div>
+                        
+                        <p className="dress-code-text">
+                            Correcte, prolétarienne et <span className="dress-code-highlight">sans frivolités bourgeoises</span>.
+                        </p>
+                    </div>
+                </section>
 
                 {/* Menu Notice */}
                 <section className="menu-section">
@@ -114,22 +119,41 @@ const Restaurant = () => {
                         Le menu sera révélé<br/>le jour du dîner
                     </p>
                     
+                    
                     <p className="menu-quote">
                         "La surprise fait partie du plan !"<br/>
                         <span className="menu-quote-author">— Lénine (probablement)</span>
                     </p>
-                </section>
 
+                    {/* NEW DRINKS DIRECTIVE SECTION */}
+                    <div className="drinks-directive">
+                        <div className="drinks-content">
+                            <div className="drinks-header">
+                                <span className="drinks-symbol">▓</span>
+                                <h3 className="drinks-title">CONTRIBUTION OBLIGATOIRE</h3>
+                                <span className="drinks-symbol">▓</span>
+                            </div>
+                            
+                            <p className="drinks-text">
+                                Chaque camarade est invité à contribuer à la <span className="drinks-highlight">gloire collective</span> en 
+                                apportant une boisson de son choix — alcoolisée ou non.
+                            </p>
+                            
+                            <div className="drinks-emphasis-box">
+                                <p className="drinks-emphasis">
+                                    Le Comité Central encourage le respect des traditions,<br/>
+                                    la <strong>VODKA</strong> demeurant la boisson du peuple.
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </section>
                 {/* Footer propaganda */}
                 <footer className="restaurant-footer">
                     <div className="footer-symbol">☭</div>
-                    <p className="footer-quote">
-                        "Dans la mère patrie de la gastronomie,<br/>
-                        tous les estomacs sont égaux<br/>
-                        (mais certains mangent plus que d'autres)"
-                    </p>
                     <div className="footer-badge">
-                        <p className="footer-badge-text">À BIENTÔT, ТОВАРИЩ ! 🌻</p>
+                        <p className="footer-badge-text">☆ À BIENTÔT, ТОВАРИЩ ! ☆</p>
                     </div>
                 </footer>
             </div>
