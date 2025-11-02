@@ -23,6 +23,10 @@ const Restaurant = () => {
                     <div className="loading-content">
                         <div className="loading-symbol">☭</div>
                         <h1 className="loading-title">PEREZTROIKA</h1>
+                        <div className="loading-bar-container">
+                            <div className="loading-bar"></div>
+                        </div>
+                        {/* <div className='loading-spinning'>☆</div> */}
                     </div>
                 </div>
             )}
@@ -61,8 +65,8 @@ const Restaurant = () => {
                 <section className="description-section">
                     <div className="description-content">
                         <p className="description-intro">
-                            Votre présence est requise au <span className="highlight-bold">Restaurant Pereztroika</span>, 
-                            établissement <span className="text-semibold"> établissement d'état où 'hospitalité ukrainienne rencontre la nostalgie soviétique.</span> ! 
+                            <span className="text-semibold"> Votre présence est requise au </span> <span className="highlight-bold">Restaurant Pereztroika</span>, 
+                            <span className="text-semibold"> établissement d'état où 'hospitalité ukrainienne rencontre la nostalgie soviétique.</span> ! 
                         </p>
                         
                         <p className="description-footer">

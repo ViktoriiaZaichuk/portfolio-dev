@@ -27,7 +27,7 @@
     z-index: 2;
 }
 
-/* ==================== LOADING SCREEN ==================== */
+/* ==================== LOADING SCREEN - SIMPLE BRUTALIST ==================== */
 .loading-overlay {
     position: fixed;
     top: 0;
@@ -43,30 +43,96 @@
 
 .loading-content {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
 }
 
 .loading-symbol {
-    font-size: 5rem;
-    margin-bottom: 1.5rem;
+    font-size: clamp(4rem, 12vw, 8rem);
+    color: #1A1A1A;
 }
 
 .loading-title {
     font-size: clamp(2rem, 10vw, 7rem);
     font-weight: 900;
     color: #E8E8E0;
-    margin-bottom: 2rem;
     font-family: "Arial Black", "Impact", sans-serif;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    text-shadow: 6px 6px 0px #1A1A1A;
+    padding: 0 .5rem;
 }
 
-.loading-subtitle {
+.loading-bar-container {
+    width: clamp(250px, 60vw, 500px);
+    height: 8px;
+    background-color: #1A1A1A;
+    overflow: hidden;
+}
+
+.loading-bar {
+    height: 100%;
+    background-color: #E8E8E0;
+    width: 0%;
+    animation: loadingProgress 3s ease-out forwards;
+}
+
+@keyframes loadingProgress {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.loading-spinning {
+    font-size: clamp(2rem, 5vw, 3rem);
     color: #E8E8E0;
-    font-size: clamp(0.75rem, 2.5vw, 1rem);
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    padding: 0 1rem;
-    font-weight: 700;
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .loading-content {
+        gap: 1.5rem;
+    }
+    
+    .loading-symbol {
+        font-size: clamp(3rem, 10vw, 6rem);
+    }
+    
+    .loading-title {
+        font-size: clamp(1.5rem, 9vw, 5rem);
+        text-shadow: 4px 4px 0px #1A1A1A;
+        padding: 0 .5rem;
+    }
+    
+    .loading-bar-container {
+        width: clamp(200px, 70vw, 400px);
+        height: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loading-content {
+        gap: 1.2rem;
+    }
+    
+    .loading-title {
+        text-shadow: 3px 3px 0px #1A1A1A;
+        font-size: clamp(.9rem, 9vw, 5rem);
+    }
 }
 
 /* ==================== MAIN CONTENT ==================== */
@@ -137,7 +203,7 @@
 /* Force smaller size on mobile */
 @media (max-width: 600px) {
     .restaurant-name {
-        font-size: clamp(2rem, 11vw, 4rem);
+        font-size: clamp(1.6rem, 11vw, 4rem);
     }
 }
 
@@ -309,7 +375,7 @@
     font-weight: 900;
     background-color: #E8E8E0;
     display: inline-block;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem .5rem;
 }
 
 .event-date {
@@ -374,7 +440,7 @@
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
-    padding: 4rem clamp(1.5rem, 5vw, 4rem);
+    padding: 4rem clamp(1rem, 5vw, 4rem);
     border: none;
     position: relative;
 }
@@ -537,7 +603,7 @@
 /* ==================== RESPONSIVE - DRINKS SECTION ==================== */
 @media (max-width: 768px) {
     .drinks-content {
-        padding: 2rem 1.5rem;
+        padding: 2rem 1rem;
     }
     
     .drinks-header {
@@ -549,7 +615,7 @@
     }
     
     .drinks-emphasis-box {
-        padding: 1.2rem 1.5rem;
+        padding: 1.2rem 1rem;
     }
 }
 
@@ -716,7 +782,6 @@
 .footer-badge {
     display: inline-block;
     color: #CC3333;
-    padding: 0.8rem 2rem;
     margin-top: 1rem;
     border: none;
     clip-path: polygon(0 0, 100% 0, 98% 100%, 2% 100%);
@@ -749,11 +814,11 @@
     }
 
     .restaurant-header {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1rem;
     }
 
     .event-section {
-        padding: 3rem 1.5rem;
+        padding: 3rem 1rem;
     }
 
     .event-date {
@@ -764,14 +829,6 @@
     .event-time {
         font-size: clamp(1.5rem, 6vw, 3rem);
         text-shadow: 4px 4px 0px #1A1A1A;
-    }
-
-    .loading-symbol {
-        font-size: 3.5rem;
-    }
-
-    .loading-title {
-        font-size: clamp(1.8rem, 8vw, 4rem);
     }
 
     .footer-symbol {
@@ -791,20 +848,24 @@
     .footer-quote {
         font-size: clamp(0.9rem, 3vw, 1.05rem);
     }
+
+    .footer-badge-text {
+        font-size: .6rem;
+    }
 }
 
 @media (max-width: 480px) {
     .communist-banner {
-        padding: 1rem;
+        padding: .5rem;
     }
 
     .banner-text {
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         letter-spacing: 0.25em;
     }
 
     .banner-symbol {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .banner-symbol-left {
@@ -858,11 +919,11 @@
     }
 
     .description-section {
-        padding: 2.5rem 1.5rem;
+        padding: 2.5rem 1rem;
     }
 
     .menu-section {
-        padding: 3rem 1.5rem;
+        padding: 3rem .5rem;
     }
 
     .menu-title {
@@ -870,10 +931,6 @@
     }
 
     .restaurant-footer {
-        padding: 2.5rem 1.5rem;
-    }
-
-    .loading-title {
-        font-size: clamp(1.5rem, 7vw, 3rem);
+        padding: 2.5rem .2rem;
     }
 }
