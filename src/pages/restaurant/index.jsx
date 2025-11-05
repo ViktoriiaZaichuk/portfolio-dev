@@ -126,12 +126,12 @@ const Restaurant = () => {
                     <div className="dress-code-content">
                         <div className="dress-code-header">
                             <span className="dress-code-symbol">⚑</span>
-                            <h3 className="dress-code-title">TENUE EXIGÉE</h3>
+                            <h3 className="dress-code-title">TENUE CORRECTE EXIGÉE</h3>
                             <span className="dress-code-symbol">⚑</span>
                         </div>
                         
                         <p className="dress-code-text">
-                            Correcte, prolétarienne et <span className="dress-code-highlight">sans frivolités bourgeoises</span>.
+                            Prolétarienne et <span className="dress-code-highlight">sans frivolités bourgeoises</span>.
                         </p>
                     </div>
                 </section>
