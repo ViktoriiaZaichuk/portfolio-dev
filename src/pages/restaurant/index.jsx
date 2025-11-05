@@ -26,7 +26,7 @@ const Restaurant = () => {
                 {/* Open Graph / Facebook */}
                 <meta property="og:type" content="website" />
                 <meta property="og:title" content="PEREZTROIKA - Dîner du Peuple 2025" />
-                <meta property="og:description" content="☭ CONVOCATION OFFICIELLE ☭ Restaurant du Camarade - Cuisine Ukrainienne • Ambiance Soviétique. Samedi 8 novembre à 19h00." />
+                <meta property="og:description" content="☭ CONVOCATION OFFICIELLE ☭ Restaurant du Camarade - Cuisine Ukrainienne • Ambiance Soviétique. Samedi 8 novembre à 19h30." />
                 <meta property="og:image" content="https://../pereztroika.jpg" />
                 <meta property="og:image:width" content="1200" />
                 <meta property="og:image:height" content="630" />
@@ -107,7 +107,7 @@ const Restaurant = () => {
                     
                     <div className="event-divider">☆ ☆ ☆</div>
                     
-                    <p className="event-time">19H00</p>
+                    <p className="event-time">19H30</p>
 
                     <div className="event-stars-bottom">★ ☭ ★</div>
                 </section>
@@ -126,7 +126,7 @@ const Restaurant = () => {
                     <div className="dress-code-content">
                         <div className="dress-code-header">
                             <span className="dress-code-symbol">⚑</span>
-                            <h3 className="dress-code-title">TENUE OBLIGATOIRE</h3>
+                            <h3 className="dress-code-title">TENUE EXIGÉE</h3>
                             <span className="dress-code-symbol">⚑</span>
                         </div>
                         
