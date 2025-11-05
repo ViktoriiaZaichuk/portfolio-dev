@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
 
 const Restaurant = () => {
     useEffect(() => {
-        document.title = 'Pereztroika';
+        document.title = 'Pereztroika - Dîner du Peuple 2025';
     }, []);
 
     const { t } = useTranslation();
@@ -16,7 +17,22 @@ const Restaurant = () => {
     }, []); 
 
     return (
+        
         <div className="restaurant-container">
+            <Helmet>
+                <title>Pereztroika - Dîner du Peuple 2025</title>
+                <meta name="description" content="Convocation officielle : Votre présence est requise au Restaurant Pereztroika. Cuisine ukrainienne authentique dans une ambiance soviétique." />
+                
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content="PEREZTROIKA - Dîner du Peuple 2025" />
+                <meta property="og:description" content="☭ CONVOCATION OFFICIELLE ☭ Restaurant du Camarade - Cuisine Ukrainienne • Ambiance Soviétique. Samedi 8 novembre à 19h00." />
+                <meta property="og:image" content="https://../pereztroika.jpg" />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                
+            </Helmet>
+
             {/* Loading Animation */}
             {loading && (
                 <div className="loading-overlay">
